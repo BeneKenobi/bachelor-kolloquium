@@ -1,0 +1,58 @@
+---
+title: "Thesis Präsentation"
+subtitle: "Implementing a Scientific Workflow Management System to Conduct the Transition to a Different Reference Genome of a Genetic Analysis Pipeline"
+author: "Benedikt Schnur"
+institute: "FOM Hochschule für Oekonomie & Management<br/> Medizinische Hochschule Hannover, Institut für Humangenetik"
+format: 
+  revealjs:
+    slide-number: True
+    lang: de-DE
+    toc: True
+    toc-title: "Überblick"
+    transition: slide
+---
+
+# Einleitung
+
+## Problem
+
+Referenzgenom GRCh37 → GRCh37
+
+::: incremental
+-   Prozessierungskapazitäten
+
+-   Speicherplatz
+
+-   Bandbreite
+
+-   Prozessierungsdauer
+
+-   Architektur
+:::
+
+## Ziele
+
+::: incremental
+-   Professionalisierung durch Einführung eines\
+    **Scientific Workflow Management Systems**
+
+-   Nutzung von Cloud Infrastruktur
+:::
+
+# Methode
+
+## Design Science Research
+
+:::: {.columns}
+::: {.column width="60%"}
+-   Design & Development
+
+-   Demonstration
+
+-   Evaluation
+:::
+
+::: {.column width="40%" .r-fit-text}
+⥁
+:::
+::::

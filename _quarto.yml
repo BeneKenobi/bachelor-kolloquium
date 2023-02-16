@@ -1,0 +1,11 @@
+author: "Benedikt Schnur"
+institute: "FOM Hochschule für Oekonomie & Management"
+format: 
+  revealjs:
+    theme: [default, custom.scss]
+    menu: false
+    slide-number: True
+    lang: de-DE
+    toc: True
+    toc-title: "Agenda"
+    transition: slide
