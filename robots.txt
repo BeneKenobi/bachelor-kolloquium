@@ -1,0 +1,1 @@
+Sitemap: https://github.com/BeneKenobi/bachelor-kolloquium/sitemap.xml
