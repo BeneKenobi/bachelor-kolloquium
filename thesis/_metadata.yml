@@ -4,6 +4,7 @@ format:
     theme: [default, ../custom.scss]
     menu: false
     slide-number: True
+    footer: "Benedikt Schnur - Implementing a Scientific Workflow Management System to Conduct the Transition to a Different Reference Genome of a Genetic Analysis Pipeline"
     lang: de-DE
     toc: True
     toc-title: "Agenda"
