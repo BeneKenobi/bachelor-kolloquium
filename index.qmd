@@ -1,0 +1,4 @@
+---
+title: "Bachelor Thesis Kolloquium Präsentationen"
+listing: grid
+---

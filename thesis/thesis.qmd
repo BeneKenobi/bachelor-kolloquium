@@ -1,15 +1,6 @@
 ---
 title: "Thesis Präsentation"
 subtitle: "Implementing a Scientific Workflow Management System to Conduct the Transition to a Different Reference Genome of a Genetic Analysis Pipeline"
-author: "Benedikt Schnur"
-institute: "FOM Hochschule für Oekonomie & Management<br/> Medizinische Hochschule Hannover, Institut für Humangenetik"
-format: 
-  revealjs:
-    slide-number: True
-    lang: de-DE
-    toc: True
-    toc-title: "Überblick"
-    transition: slide
 ---
 
 # Einleitung
