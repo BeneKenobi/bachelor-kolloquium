@@ -3,7 +3,16 @@ project:
 
 author: "Benedikt Schnur"
 
+website: 
+  site-url: "https://benekenobi.github.io/bachelor-kolloquium/"
+
 format:
   html:
     theme: default
     toc: true
+
+resources:
+  - fonts/*.ttf
+
+include-in-header: style.html
+    

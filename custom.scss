@@ -1,5 +1,21 @@
+@font-face {
+    font-family: "Jost";
+    src:url("/fonts/Jost-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Roboto Mono" ;
+    src:url("/fonts/RobotoMono-VariableFont_wght.ttf");
+}
+
 /*-- scss:defaults --*/
 $primary: #47476B;
 $secondary: #005968;
 $body-color: #000;
 $link-color: $body-color;
+$presentation-heading-font: "Jost", sans-serif;
+$font-family-sans-serif: "Jost", sans-serif;
+$font-family-monospace: "Roboto Mono", monospace;
+
+.reveal .footer {
+    font-size: 0.35em !important;
+}
