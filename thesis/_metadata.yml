@@ -9,5 +9,5 @@ format:
     toc: True
     toc-title: "Agenda"
     transition: slide
-twitter-card:
-  image: "preview.png"
+
+image: "preview.png"
