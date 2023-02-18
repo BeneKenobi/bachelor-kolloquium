@@ -14,5 +14,5 @@ format:
 resources:
   - fonts/*.ttf
 
-include-in-header: style.html
-    
+open-graph: true
+twitter-card: true
