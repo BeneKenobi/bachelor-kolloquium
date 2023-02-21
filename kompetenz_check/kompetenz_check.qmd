@@ -9,21 +9,17 @@ import plotly.io as pio
 import plotly.express as px
 import plotly.graph_objects as go
 
-CUD_COLORS = (
-    "#e69f00",  # orange
-    "#56b4e9",  # sky-blue
-    "#009e73",  # bluish-green
-    "#f0e442",  # yellow
-    "#0072b2",  # blue
-    "#d55e00",  # vermilion
-    "#cc79a7",  # reddish-purple
+BENE_COLORS = (
+    "#47476B",
+    "#CDA715",
+    "#318986",
 )
-pio.templates["cud"] = go.layout.Template(
+pio.templates["bene"] = go.layout.Template(
     layout=go.Layout(
-        colorway=CUD_COLORS,
+        colorway=BENE_COLORS,
     )
 )
-pio.templates.default = "plotly_white+cud"
+pio.templates.default = "plotly_white+bene"
 df = pd.read_csv("FOM_Ergebnisse.csv", sep=";", header=0, dtype={'Bereich':'category'})
 df["Bereich"] = df["Bereich"].cat.set_categories([
     "Fachkompetenz",
@@ -37,7 +33,8 @@ df["Bereich"] = df["Bereich"].cat.set_categories([
 df_grouped = df.groupby(['Bereich']).mean(numeric_only=True).reset_index()
 df["Änderung"] = df["Bilanz"] - df["eigene Erwartung"]
 fig = px.bar(df_grouped, x="Bereich", y=["eigene Erwartung", "Zwischenbilanz", "Bilanz"], barmode='group')
-fig.update_layout(legend={'title_text':''}, yaxis={'title_text':''})
+fig.update_layout(legend={'title_text':'','orientation':"h", 'yanchor':"bottom", 'y':1, 'xanchor':"center", 'x':0.5}, yaxis={'title_text':'Bewertung'})
+
 fig.show()
 ```
 

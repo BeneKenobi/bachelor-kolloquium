@@ -6,7 +6,9 @@ subtitle: "Implementing a Scientific Workflow Management System to Conduct the T
 # Einleitung
 
 ## Problem
+::::: {.columns}
 
+:::: {.column width="60%"}
 Referenzgenom GRCh37 → GRCh37
 
 ::: incremental
@@ -20,6 +22,14 @@ Referenzgenom GRCh37 → GRCh37
 
 -   Architektur
 :::
+::::
+
+:::: {.column width="40%"}
+![](dna_puzzle.png)
+::::
+
+:::::
+
 
 ## Ziele
 
