@@ -3,8 +3,8 @@
     src:url("https://benekenobi.github.io/bachelor-kolloquium/fonts/Jost-VariableFont_wght.ttf");
 }
 @font-face {
-    font-family: "Roboto Mono" ;
-    src:url("https://benekenobi.github.io/bachelor-kolloquium/fonts/RobotoMono-VariableFont_wght.ttf");
+    font-family: "Source Code Pro" ;
+    src:url("SourceCodePro-VariableFont_wght");
 }
 
 /*-- scss:defaults --*/
@@ -14,7 +14,7 @@ $body-color: #000;
 $link-color: $body-color;
 $presentation-heading-font: "Jost", sans-serif;
 $font-family-sans-serif: "Jost", sans-serif;
-$font-family-monospace: "Roboto Mono", monospace;
+$font-family-monospace: "Source Code Pro", monospace;
 
 .reveal .footer {
     font-size: 0.35em !important;
