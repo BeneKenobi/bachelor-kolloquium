@@ -1,15 +1,27 @@
 ---
 title: "Thesis Präsentation"
 subtitle: "Implementing a Scientific Workflow Management System to Conduct the Transition to a Different Reference Genome of a Genetic Analysis Pipeline"
+bibliography: references.bib
+csl: "ieee.csl"
 ---
 
 # Einleitung
 
-## Problem
-::::: {.columns}
+## Auslöser
 
-:::: {.column width="60%"}
-Referenzgenom GRCh37 → GRCh37
+:::: {.columns}
+
+::: {.column width="60%"}
+Wechsel des Referenzgenom in der genetischen Analyse Pipeline
+
+GRCh37 → GRCh38
+:::
+::: {.column width="40%"}
+![](dna_puzzle.png)
+:::
+::::
+
+## Probleme
 
 ::: incremental
 -   Prozessierungskapazitäten
@@ -22,14 +34,6 @@ Referenzgenom GRCh37 → GRCh37
 
 -   Architektur
 :::
-::::
-
-:::: {.column width="40%"}
-![](dna_puzzle.png)
-::::
-
-:::::
-
 
 ## Ziele
 
@@ -50,10 +54,19 @@ Referenzgenom GRCh37 → GRCh37
 
 -   Demonstration
 
--   Evaluation
+-   Evaluation[^pfeffers]
+
+
 :::
 
 ::: {.column width="40%" .r-fit-text}
 ⥁
 :::
 ::::
+
+[^pfeffers]: Basierend auf @Peffers2007 (vereinfacht)
+
+# Quellenverzeichnis
+
+::: {#refs}
+:::
