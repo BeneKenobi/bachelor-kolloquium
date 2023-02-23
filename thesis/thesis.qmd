@@ -9,20 +9,25 @@ csl: "ieee.csl"
 
 ## Auslöser
 
-:::: {.columns}
+::::: {.columns}
 
-::: {.column width="60%"}
+:::: {.column width="60%"}
+::: {.center-y style='width:60%'}
 Wechsel des Referenzgenom in der genetischen Analyse Pipeline
 
 GRCh37 → GRCh38
 :::
-::: {.column width="40%"}
+::::
+:::: {.column width="40%"}
+::: {.center-y style='width:40%'}
 ![](dna_puzzle.png)
 :::
 ::::
+:::::
 
 ## Probleme
 
+:::: {.center-y}
 ::: incremental
 -   Prozessierungskapazitäten
 
@@ -34,33 +39,27 @@ GRCh37 → GRCh38
 
 -   Architektur
 :::
+::::
 
 ## Ziele
 
+:::: {.center-y}
 ::: incremental
 -   Professionalisierung durch Einführung eines\
     **Scientific Workflow Management Systems**
 
 -   Nutzung von Cloud Infrastruktur
 :::
+::::
 
 # Methode
 
 ## Design Science Research
 
-:::: {.columns}
-::: {.column width="60%"}
--   Design & Development
 
--   Demonstration
-
--   Evaluation[^pfeffers]
-
-
-:::
-
-::: {.column width="40%" .r-fit-text}
-⥁
+:::: {.blocker}
+::: {.center-y}
+![Vereinfachter DSR Prozess[^pfeffers]](basic_dsr.svg)
 :::
 ::::
 
