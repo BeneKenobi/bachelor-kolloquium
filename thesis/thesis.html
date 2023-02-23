@@ -28,6 +28,25 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -355,13 +374,15 @@ Benedikt Schnur
 <ul>
 <li><a href="#/einleitung" id="/toc-einleitung">Einleitung</a>
 <ul>
-<li><a href="#/problem" id="/toc-problem">Problem</a></li>
+<li><a href="#/auslöser" id="/toc-auslöser">Auslöser</a></li>
+<li><a href="#/probleme" id="/toc-probleme">Probleme</a></li>
 <li><a href="#/ziele" id="/toc-ziele">Ziele</a></li>
 </ul></li>
 <li><a href="#/methode" id="/toc-methode">Methode</a>
 <ul>
 <li><a href="#/design-science-research" id="/toc-design-science-research">Design Science Research</a></li>
 </ul></li>
+<li><a href="#/quellenverzeichnis" id="/toc-quellenverzeichnis">Quellenverzeichnis</a></li>
 </ul>
 </nav>
 </section>
@@ -370,11 +391,19 @@ Benedikt Schnur
 <h1>Einleitung</h1>
 
 </section>
-<section id="problem" class="slide level2">
-<h2>Problem</h2>
+<section id="auslöser" class="slide level2">
+<h2>Auslöser</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p>Referenzgenom GRCh37 → GRCh37</p>
+<p>Wechsel des Referenzgenom in der genetischen Analyse Pipeline</p>
+<p>GRCh37 → GRCh38</p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="dna_puzzle.png"></p>
+</div>
+</div>
+</section>
+<section id="probleme" class="slide level2">
+<h2>Probleme</h2>
 <div>
 <ul>
 <li class="fragment"><p>Prozessierungskapazitäten</p></li>
@@ -383,10 +412,6 @@ Benedikt Schnur
 <li class="fragment"><p>Prozessierungsdauer</p></li>
 <li class="fragment"><p>Architektur</p></li>
 </ul>
-</div>
-</div><div class="column" style="width:40%;">
-<p><img data-src="dna_puzzle.png"></p>
-</div>
 </div>
 </section>
 <section id="ziele" class="slide level2">
@@ -411,17 +436,27 @@ Benedikt Schnur
 <ul>
 <li><p>Design &amp; Development</p></li>
 <li><p>Demonstration</p></li>
-<li><p>Evaluation</p></li>
+<li><p>Evaluation<sup>1</sup></p></li>
 </ul>
 </div><div class="column r-fit-text" style="width:40%;">
 <p>⥁</p>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Basierend auf <span class="citation" data-cites="Peffers2007"><a href="#/quellenverzeichnis" role="doc-biblioref" onclick="">[1]</a></span> (vereinfacht)</p></li></ol></aside></section></section>
+<section id="quellenverzeichnis" class="title-slide slide level1 smaller scrollable">
+<h1>Quellenverzeichnis</h1>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-Peffers2007" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">K. Peffers, T. Tuunanen, M. A. Rothenberger, und S. Chatterjee, <span>„A <span>Design Science Research Methodology</span> for <span>Information Systems Research</span>“</span>, <em>Journal of Management Information Systems</em>, Bd. 24, Nr. 3, S. 45–77, Dez. 2007, doi: <a href="https://doi.org/10.2753/mis0742-1222240302">10.2753/mis0742-1222240302</a>.</div>
 </div>
 </div>
 
 <div class="footer footer-default">
 <p>Benedikt Schnur - Implementing a Scientific Workflow Management System to Conduct the Transition to a Different Reference Genome of a Genetic Analysis Pipeline</p>
 </div>
-</section></section>
+</section>
+
+
     </div>
   </div>
 

@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "thesis/thesis.html#problem",
-    "href": "thesis/thesis.html#problem",
+    "objectID": "thesis/thesis.html#auslöser",
+    "href": "thesis/thesis.html#auslöser",
     "title": "Thesis Präsentation",
-    "section": "Problem",
-    "text": "Problem\n\n\nReferenzgenom GRCh37 → GRCh37\n\n\nProzessierungskapazitäten\nSpeicherplatz\nBandbreite\nProzessierungsdauer\nArchitektur"
+    "section": "Auslöser",
+    "text": "Auslöser\n\n\nWechsel des Referenzgenom in der genetischen Analyse Pipeline\nGRCh37 → GRCh38"
+  },
+  {
+    "objectID": "thesis/thesis.html#probleme",
+    "href": "thesis/thesis.html#probleme",
+    "title": "Thesis Präsentation",
+    "section": "Probleme",
+    "text": "Probleme\n\n\nProzessierungskapazitäten\nSpeicherplatz\nBandbreite\nProzessierungsdauer\nArchitektur"
   },
   {
     "objectID": "thesis/thesis.html#ziele",
@@ -18,7 +25,7 @@
     "href": "thesis/thesis.html#design-science-research",
     "title": "Thesis Präsentation",
     "section": "Design Science Research",
-    "text": "Design Science Research\n\n\n\nDesign & Development\nDemonstration\nEvaluation\n\n\n⥁\n\n\n\n\nBenedikt Schnur - Implementing a Scientific Workflow Management System to Conduct the Transition to a Different Reference Genome of a Genetic Analysis Pipeline"
+    "text": "Design Science Research\n\n\n\nDesign & Development\nDemonstration\nEvaluation1\n\n\n⥁\n\n\nBasierend auf [1] (vereinfacht)"
   },
   {
     "objectID": "kompetenz_check/kompetenz_check.html#überblick",
