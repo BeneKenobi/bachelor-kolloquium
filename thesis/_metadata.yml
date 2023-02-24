@@ -9,5 +9,7 @@ format:
     toc: True
     toc-title: "Agenda"
     transition: slide
+    parallax-background-image: images/background.png
+    parallax-background-size: "5120px 2784px"
 
 image: "preview.png"
