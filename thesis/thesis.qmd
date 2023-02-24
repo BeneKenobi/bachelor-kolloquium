@@ -52,6 +52,21 @@ GRCh37 → GRCh38
 :::
 ::::
 
+# Literaturrecherche
+
+## Ergebnisse
+:::: {.center-y}
+::: incremental
+-   Referenzgenom
+
+-   Sequenzierung
+
+-   Auswirkungen auf IT
+
+-   Scientific Workflow Management Systeme
+:::
+::::
+
 # Methode
 
 ## Design Science Research
@@ -64,9 +79,29 @@ GRCh37 → GRCh38
 
 [^pfeffers]: Basierend auf @Peffers2007 (vereinfacht)
 
-# Literaturrecherche
+# Artefaktbeschreibung
 
+## Entscheidung für Nextflow
 
+## Analyse vorliegendes Skript
+
+## Konvertierung zu Nextflow
+
+## BAM zu FastQ
+
+## Aufteilung megSAP Schritte
+
+## Resourcenoptimierung Einzelschritte
+
+## Resilienz und Monitoring
+
+# Cloudnutzung Kostenberechnung
+
+## AWS
+
+# Diskussion
+
+# Fazit
 
 # Quellenverzeichnis {visibility="uncounted"}
 
