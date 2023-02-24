@@ -12,7 +12,8 @@ format:
     toc: true
 
 resources:
-  - fonts/*.ttf
+  - "fonts/*.ttf"
+  - "*.png"
 
 open-graph: true
 twitter-card: true
