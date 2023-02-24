@@ -21,11 +21,74 @@
     "text": "Ziele\n\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems\nNutzung von Cloud Infrastruktur"
   },
   {
+    "objectID": "thesis/thesis.html#ergebnisse",
+    "href": "thesis/thesis.html#ergebnisse",
+    "title": "Thesis Präsentation",
+    "section": "Ergebnisse",
+    "text": "Ergebnisse\n\n\n\nReferenzgenom\nSequenzierung\nAuswirkungen auf IT\nScientific Workflow Management Systeme"
+  },
+  {
     "objectID": "thesis/thesis.html#design-science-research",
     "href": "thesis/thesis.html#design-science-research",
     "title": "Thesis Präsentation",
     "section": "Design Science Research",
     "text": "Design Science Research\n\n\n\n\n\nVereinfachter DSR Prozess1\n\n\n\n\nBasierend auf [1] (vereinfacht)"
+  },
+  {
+    "objectID": "thesis/thesis.html#entscheidung-für-nextflow",
+    "href": "thesis/thesis.html#entscheidung-für-nextflow",
+    "title": "Thesis Präsentation",
+    "section": "Entscheidung für Nextflow",
+    "text": "Entscheidung für Nextflow"
+  },
+  {
+    "objectID": "thesis/thesis.html#analyse-vorliegendes-skript",
+    "href": "thesis/thesis.html#analyse-vorliegendes-skript",
+    "title": "Thesis Präsentation",
+    "section": "Analyse vorliegendes Skript",
+    "text": "Analyse vorliegendes Skript"
+  },
+  {
+    "objectID": "thesis/thesis.html#konvertierung-zu-nextflow",
+    "href": "thesis/thesis.html#konvertierung-zu-nextflow",
+    "title": "Thesis Präsentation",
+    "section": "Konvertierung zu Nextflow",
+    "text": "Konvertierung zu Nextflow"
+  },
+  {
+    "objectID": "thesis/thesis.html#bam-zu-fastq",
+    "href": "thesis/thesis.html#bam-zu-fastq",
+    "title": "Thesis Präsentation",
+    "section": "BAM zu FastQ",
+    "text": "BAM zu FastQ"
+  },
+  {
+    "objectID": "thesis/thesis.html#aufteilung-megsap-schritte",
+    "href": "thesis/thesis.html#aufteilung-megsap-schritte",
+    "title": "Thesis Präsentation",
+    "section": "Aufteilung megSAP Schritte",
+    "text": "Aufteilung megSAP Schritte"
+  },
+  {
+    "objectID": "thesis/thesis.html#resourcenoptimierung-einzelschritte",
+    "href": "thesis/thesis.html#resourcenoptimierung-einzelschritte",
+    "title": "Thesis Präsentation",
+    "section": "Resourcenoptimierung Einzelschritte",
+    "text": "Resourcenoptimierung Einzelschritte"
+  },
+  {
+    "objectID": "thesis/thesis.html#resilienz-und-monitoring",
+    "href": "thesis/thesis.html#resilienz-und-monitoring",
+    "title": "Thesis Präsentation",
+    "section": "Resilienz und Monitoring",
+    "text": "Resilienz und Monitoring"
+  },
+  {
+    "objectID": "thesis/thesis.html#aws",
+    "href": "thesis/thesis.html#aws",
+    "title": "Thesis Präsentation",
+    "section": "AWS",
+    "text": "AWS"
   },
   {
     "objectID": "kompetenz_check/kompetenz_check.html#überblick",
