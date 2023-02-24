@@ -56,7 +56,6 @@ GRCh37 → GRCh38
 
 ## Design Science Research
 
-
 :::: {.blocker}
 ::: {.center-y}
 ![Vereinfachter DSR Prozess[^pfeffers]](basic_dsr.svg)
@@ -65,7 +64,11 @@ GRCh37 → GRCh38
 
 [^pfeffers]: Basierend auf @Peffers2007 (vereinfacht)
 
-# Quellenverzeichnis
+# Literaturrecherche
+
+
+
+# Quellenverzeichnis {visibility="uncounted"}
 
 ::: {#refs}
 :::
