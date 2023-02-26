@@ -87,11 +87,34 @@ GRCh37 → GRCh38
 
 ## Konvertierung zu Nextflow
 
-## BAM zu FastQ
+::::: {.columns}
 
-## Aufteilung megSAP Schritte
-
-## Resourcenoptimierung Einzelschritte
+:::: {.column width="30%"}
+::: {.fragment .center-y style='width:30%;text-align: center'}
+![Initialer Nextflow Workflow](images/nextflow_dag_v0.1.svg){height="250"}
+:::
+::::
+:::: {.column width="5%"}
+::: {.fragment .center-y style='width:5%;text-align: center'}
+→
+:::
+::::
+:::: {.column width="30%"}
+::: {.fragment style='text-align: center'}
+![Nextflow Workflow mit BAM zu FastQ Konvertierung](images/nextflow_dag_v0.2.svg){height="400"}
+:::
+::::
+:::: {.column width="5%"}
+::: {.fragment .center-y style='width:5%;text-align: center'}
+→
+:::
+::::
+:::: {.column width="30%"}
+::: {.fragment style='text-align: center'}
+![Finaler Nextflow Workflow](images/nextflow_dag_v0.3.svg){height="400"}
+:::
+::::
+:::::
 
 ## Resilienz und Monitoring
 
