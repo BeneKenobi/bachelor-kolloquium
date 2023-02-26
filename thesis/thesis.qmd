@@ -124,7 +124,154 @@ GRCh37 → GRCh38
 
 # Diskussion
 
-# Fazit
+## Optimierung CPU Nutzung
+```{python}
+import pandas as pd
+import plotly.io as pio
+import plotly.graph_objects as go
+
+BENE_COLORS = (
+    "#47476B",
+    "#CDA715",
+    "#318986",
+)
+pio.templates["bene"] = go.layout.Template(
+    layout=go.Layout(
+        colorway=BENE_COLORS,
+    )
+)
+pio.templates.default = "plotly_white+bene"
+figure_aoc_cpu_compared = go.Figure()
+
+df_CPU_v04 = pd.DataFrame(
+    {
+        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
+        "allocated": [15, 8, 2, 2, 2],
+        "used": [15 * 0.211, 8 * 0.588, 2 * 0.468, 2 * 0.91, 2 * 0.114],
+        "time": [
+            pd.Timedelta("2 hours 41 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min") + pd.Timedelta("3 min 26 s"),
+        ],
+    }
+)
+
+figure_aoc_cpu_compared.add_trace(
+    go.Scatter(
+        x=[0,11.5],
+        y=[12,12],
+        fill="tozeroy",
+        line_color=BENE_COLORS[0],
+        mode="lines",
+        name="initital zugewiesen",
+    )
+)
+
+figure_aoc_cpu_compared.add_trace(
+    go.Scatter(
+        x=pd.concat([pd.Series([0]), df_CPU_v04["time"].dt.total_seconds() / 60 / 60]),
+        y=pd.concat([pd.Series([df_CPU_v04["allocated"][0]]), df_CPU_v04["allocated"]]),
+        fill="tozeroy",
+        line_color=BENE_COLORS[2],
+        #fillcolor=BENE_COLORS[1],
+        line_shape="vh",
+        mode="lines",
+        name="optimiert zugewiesen",
+    )
+)
+
+figure_aoc_cpu_compared.update_layout(
+    dict(
+        paper_bgcolor='rgba(0,0,0,0)',
+        margin=dict(l=20, r=20, t=20, b=20),
+        showlegend=True,
+        legend=dict(orientation="h", yanchor="bottom", y=1, xanchor="center", x=0.5),
+        xaxis_title="Zeit in h",
+        yaxis_title="CPU Kerne",
+    )
+)
+figure_aoc_cpu_compared.show()
+```
+
+## Optimierung Speichernutzung
+```{python}
+import pandas as pd
+import plotly.io as pio
+import plotly.graph_objects as go
+
+BENE_COLORS = (
+    "#47476B",
+    "#CDA715",
+    "#318986",
+)
+pio.templates["bene"] = go.layout.Template(
+    layout=go.Layout(
+        colorway=BENE_COLORS,
+    )
+)
+pio.templates.default = "plotly_white+bene"
+
+df_memory_v04 = pd.DataFrame(
+    {
+        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
+        "allocated": [2, 20, 48, 2, 2],
+        "used": [2 * 0.494, 20 * 0.556, 48 * 0.379, 2 * 0.555, 2 * 0.335],
+        "time": [
+            pd.Timedelta("2 hours 41 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min") + pd.Timedelta("3 min 26 s"),
+        ],
+    }
+)
+
+figure_aoc_memory_compared = go.Figure()
+
+figure_aoc_memory_compared.add_trace(
+    go.Scatter(
+        x=[0,11.5],
+        y=[50,50],
+        fill="tozeroy",
+        line_color=BENE_COLORS[0],
+        #fillcolor=CUD_COLORS[1],
+        mode="lines",
+        name="initial zugewiesen",
+    )
+)
+
+figure_aoc_memory_compared.add_trace(
+    go.Scatter(
+        x=pd.concat([pd.Series([0]), df_memory_v04["time"].dt.total_seconds() / 60 / 60]),
+        y=pd.concat([pd.Series([df_memory_v04["allocated"][0]]), df_memory_v04["allocated"]]),
+        fill="tozeroy",
+        line_color=BENE_COLORS[2],
+        #fillcolor=CUD_COLORS[1],
+        line_shape="vh",
+        mode="lines",
+        name="optimiert zugewiesen",
+    )
+)
+
+figure_aoc_memory_compared.update_layout(
+    dict(
+        paper_bgcolor='rgba(0,0,0,0)',
+        margin=dict(l=20, r=20, t=20, b=20),
+        template="plotly_white+bene",
+        showlegend=True,
+        legend=dict(orientation="h", yanchor="bottom", y=1, xanchor="center", x=0.5),
+        xaxis_title="Zeit in h",
+        yaxis_title="Arbeitsspeicher in GB",
+    )
+)
+
+figure_aoc_memory_compared.show()
+
+```
+
+# Fazit und Ausblick
 
 # Quellenverzeichnis {visibility="uncounted"}
 
