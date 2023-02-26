@@ -20,7 +20,7 @@ GRCh37 → GRCh38
 ::::
 :::: {.column width="40%"}
 ::: {.center-y style='width:40%'}
-![](dna_puzzle.png)
+![](images/dna_puzzle.png)
 :::
 ::::
 :::::
@@ -73,7 +73,7 @@ GRCh37 → GRCh38
 
 :::: {.blocker}
 ::: {.center-y}
-![Vereinfachter DSR Prozess[^pfeffers]](basic_dsr.svg)
+![Vereinfachter DSR Prozess[^pfeffers]](images/basic_dsr.svg)
 :::
 ::::
 
