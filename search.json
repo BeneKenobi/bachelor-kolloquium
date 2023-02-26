@@ -53,28 +53,7 @@
     "href": "thesis/thesis.html#konvertierung-zu-nextflow",
     "title": "Thesis Präsentation",
     "section": "Konvertierung zu Nextflow",
-    "text": "Konvertierung zu Nextflow"
-  },
-  {
-    "objectID": "thesis/thesis.html#bam-zu-fastq",
-    "href": "thesis/thesis.html#bam-zu-fastq",
-    "title": "Thesis Präsentation",
-    "section": "BAM zu FastQ",
-    "text": "BAM zu FastQ"
-  },
-  {
-    "objectID": "thesis/thesis.html#aufteilung-megsap-schritte",
-    "href": "thesis/thesis.html#aufteilung-megsap-schritte",
-    "title": "Thesis Präsentation",
-    "section": "Aufteilung megSAP Schritte",
-    "text": "Aufteilung megSAP Schritte"
-  },
-  {
-    "objectID": "thesis/thesis.html#resourcenoptimierung-einzelschritte",
-    "href": "thesis/thesis.html#resourcenoptimierung-einzelschritte",
-    "title": "Thesis Präsentation",
-    "section": "Resourcenoptimierung Einzelschritte",
-    "text": "Resourcenoptimierung Einzelschritte"
+    "text": "Konvertierung zu Nextflow\n\n\n\n\n\n\nInitialer Nextflow Workflow\n\n\n\n\n\n→\n\n\n\n\n\n\nNextflow Workflow mit BAM zu FastQ Konvertierung\n\n\n\n\n\n→\n\n\n\n\n\n\nFinaler Nextflow Workflow"
   },
   {
     "objectID": "thesis/thesis.html#resilienz-und-monitoring",
@@ -89,6 +68,20 @@
     "title": "Thesis Präsentation",
     "section": "AWS",
     "text": "AWS"
+  },
+  {
+    "objectID": "thesis/thesis.html#optimierung-cpu-nutzung",
+    "href": "thesis/thesis.html#optimierung-cpu-nutzung",
+    "title": "Thesis Präsentation",
+    "section": "Optimierung CPU Nutzung",
+    "text": "Optimierung CPU Nutzung"
+  },
+  {
+    "objectID": "thesis/thesis.html#optimierung-speichernutzung",
+    "href": "thesis/thesis.html#optimierung-speichernutzung",
+    "title": "Thesis Präsentation",
+    "section": "Optimierung Speichernutzung",
+    "text": "Optimierung Speichernutzung"
   },
   {
     "objectID": "kompetenz_check/kompetenz_check.html#überblick",
