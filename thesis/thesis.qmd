@@ -7,7 +7,7 @@ csl: "ieee.csl"
 
 # Einleitung
 
-## Auslöser
+## Einleitung - Auslöser
 
 ::::: {.columns}
 
@@ -25,7 +25,7 @@ GRCh37 → GRCh38
 ::::
 :::::
 
-## Probleme
+## Einleitung - Probleme
 
 :::: {.center-y}
 ::: incremental
@@ -41,7 +41,7 @@ GRCh37 → GRCh38
 :::
 ::::
 
-## Ziele
+## Einleitung - Ziele
 
 :::: {.center-y}
 ::: incremental
@@ -54,7 +54,7 @@ GRCh37 → GRCh38
 
 # Literaturrecherche
 
-## Ergebnisse
+## Literaturrecherche - Ergebnisse
 :::: {.center-y}
 ::: incremental
 -   Referenzgenom
@@ -69,7 +69,7 @@ GRCh37 → GRCh38
 
 # Methode
 
-## Design Science Research
+## Methode - Design Science Research
 
 :::: {.blocker}
 ::: {.center-y}
@@ -79,13 +79,17 @@ GRCh37 → GRCh38
 
 [^pfeffers]: Basierend auf @Peffers2007 (vereinfacht)
 
-# Artefaktbeschreibung
+# Artefakt
 
-## Entscheidung für Nextflow
+## Artefakt - Entscheidung für Nextflow
 
-## Analyse vorliegendes Skript
+Auf Bais der Literaturrecherche
 
-## Konvertierung zu Nextflow
+## Artefakt - Analyse vorliegendes Skript
+
+Funktion analysiert um zunächst 1:1 übernehmen zu können
+
+## Artefakt - Konvertierung Pipeline zu Nextflow {.smaller}
 
 ::::: {.columns}
 
@@ -116,15 +120,18 @@ GRCh37 → GRCh38
 ::::
 :::::
 
-## Resilienz und Monitoring
+## Artefakt - Resilienz und Monitoring
+
+- Schritte werden neu gestartet mit mehrt Arbeitsspeicher
+- Email nach Abschluss Pipeline
 
 # Cloudnutzung Kostenberechnung
 
-## AWS
+## Cloudnutzung Kostenberechnung - AWS
 
 # Diskussion
 
-## Optimierung CPU Nutzung
+## Diskussion - Optimierung CPU Nutzung
 ```{python}
 import pandas as pd
 import plotly.io as pio
@@ -195,7 +202,7 @@ figure_aoc_cpu_compared.update_layout(
 figure_aoc_cpu_compared.show()
 ```
 
-## Optimierung Speichernutzung
+## Diskussion - Optimierung Speichernutzung
 ```{python}
 import pandas as pd
 import plotly.io as pio
@@ -273,7 +280,52 @@ figure_aoc_memory_compared.show()
 
 # Fazit und Ausblick
 
-# Quellenverzeichnis {visibility="uncounted"}
+## Fazit und Ausblick - Effizienzsteigerung
+
+Luft nach oben
+
+## Fazit und Ausblick - Usability
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+::: {.center-y style='width:50%'}
+
+Nutzung Nextflow Tower
+
+:::
+::::
+::::  {.column width="50%"}
+::: {.center-y style='width:50%'}
+
+![Screenshot Nextflow Tower](images/tower_screenshot.png)
+
+:::
+::::
+:::::
+
+## Fazit und Ausblick - Neuer Sequencer
+
+::::: {.columns}
+:::: {.column width="40%"}
+::: {.center-y style='width:40%'}
+
+![NovaSeq X Plus Produktbild[^IlluminaInc2022a]](images/novaseq_x.png){height="300"}
+
+:::
+::::
+::::  {.column width="60%"}
+::: {.center-y style='width:60%'}
+
+Einführung NovaSeq X Plus ab Q3 2023 erfordert neue Pipeline
+
+:::
+::::
+:::::
+
+[^IlluminaInc2022a]: Quelle: @IlluminaInc2022a
+
+# Quellenverzeichnis {visibility="uncounted" .unnumbered .unlisted}
 
 ::: {#refs}
 :::
