@@ -45,25 +45,12 @@ GRCh37 → GRCh38
 
 :::: {.center-y}
 ::: incremental
+
 -   Professionalisierung durch Einführung eines\
     **Scientific Workflow Management Systems**
 
 -   Nutzung von Cloud Infrastruktur
-:::
-::::
 
-# Literaturrecherche
-
-## Literaturrecherche - Ergebnisse
-:::: {.center-y}
-::: incremental
--   Referenzgenom
-
--   Sequenzierung
-
--   Auswirkungen auf IT
-
--   Scientific Workflow Management Systeme
 :::
 ::::
 
@@ -83,11 +70,7 @@ GRCh37 → GRCh38
 
 ## Artefakt - Entscheidung für Nextflow
 
-Auf Bais der Literaturrecherche
-
-## Artefakt - Analyse vorliegendes Skript
-
-Funktion analysiert um zunächst 1:1 übernehmen zu können
+Auf Basis der Literaturrecherche
 
 ## Artefakt - Konvertierung Pipeline zu Nextflow {.smaller}
 
@@ -120,14 +103,267 @@ Funktion analysiert um zunächst 1:1 übernehmen zu können
 ::::
 :::::
 
+## Artefakt - Optimierung {.small}
+```{python}
+import pandas as pd
+import plotly.io as pio
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+BENE_COLORS = (
+    "#47476B",
+    "#CDA715",
+    "#318986",
+)
+pio.templates["bene"] = go.layout.Template(
+    layout=go.Layout(
+        colorway=BENE_COLORS,
+        paper_bgcolor='rgba(0,0,0,0)',
+    )
+)
+pio.templates.default = "plotly_white+bene"
+
+df_CPU_v03 = pd.DataFrame(
+    {
+        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
+        "allocated": [12, 12, 12, 12, 12],
+        "used": [12 * 0.287, 12 * 0.531, 12 * 0.086, 12 * 0.157, 12 * 0.017],
+        "time": [
+            pd.Timedelta("2 hours 54 min"),
+            pd.Timedelta("2 hours 54 min") + pd.Timedelta("2 hours 40 min"),
+            pd.Timedelta("2 hours 54 min")
+            + pd.Timedelta("2 hours 40 min")
+            + pd.Timedelta("6 hours 11 min"),
+            pd.Timedelta("2 hours 54 min")
+            + pd.Timedelta("2 hours 40 min")
+            + pd.Timedelta("6 hours 11 min")
+            + pd.Timedelta("1 hours 3 min"),
+            pd.Timedelta("2 hours 54 min")
+            + pd.Timedelta("2 hours 40 min")
+            + pd.Timedelta("6 hours 11 min")
+            + pd.Timedelta("1 hours 3 min")
+            + pd.Timedelta("3 min 51 s"),
+        ],
+    }
+)
+
+df_CPU_v04 = pd.DataFrame(
+    {
+        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
+        "allocated": [15, 8, 2, 2, 2],
+        "used": [15 * 0.211, 8 * 0.588, 2 * 0.468, 2 * 0.91, 2 * 0.114],
+        "time": [
+            pd.Timedelta("2 hours 41 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min") + pd.Timedelta("3 min 26 s"),
+        ],
+    }
+)
+
+df_memory_v03 = pd.DataFrame(
+    {
+        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
+        "allocated": [50, 50, 50, 50, 50],
+        "used": [50 * 0.02, 50 * 0.328, 50 * 0.819, 50 * 0.022, 50 * 0.007],
+        "time": [
+            pd.Timedelta("2 hours 54 min"),
+            pd.Timedelta("2 hours 54 min") + pd.Timedelta("2 hours 40 min"),
+            pd.Timedelta("2 hours 54 min")
+            + pd.Timedelta("2 hours 40 min")
+            + pd.Timedelta("6 hours 11 min"),
+            pd.Timedelta("2 hours 54 min")
+            + pd.Timedelta("2 hours 40 min")
+            + pd.Timedelta("6 hours 11 min")
+            + pd.Timedelta("1 hours 3 min"),
+            pd.Timedelta("2 hours 54 min")
+            + pd.Timedelta("2 hours 40 min")
+            + pd.Timedelta("6 hours 11 min")
+            + pd.Timedelta("1 hours 3 min")
+            + pd.Timedelta("3 min 51 s"),
+        ],
+    }
+)
+
+df_memory_v04 = pd.DataFrame(
+    {
+        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
+        "allocated": [2, 20, 48, 2, 2],
+        "used": [2 * 0.494, 20 * 0.556, 48 * 0.379, 2 * 0.555, 2 * 0.335],
+        "time": [
+            pd.Timedelta("2 hours 41 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min"),
+            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min") + pd.Timedelta("3 min 26 s"),
+        ],
+    }
+)
+
+figure_optimization = make_subplots(
+    rows=2,
+    cols=2,
+    shared_yaxes=True,
+    subplot_titles=("Initital","Optimiert"),
+    horizontal_spacing=0.025,
+    vertical_spacing=0.05,
+    )
+
+figure_optimization.add_trace(
+    go.Bar(
+        x=df_CPU_v03["step"],
+        y=df_CPU_v03["allocated"],
+        name="zugewiesen",
+        marker_color=BENE_COLORS[0],
+    ),
+    row=1,
+    col=1,
+)
+
+figure_optimization.add_trace(
+    go.Bar(
+        x=df_CPU_v03["step"],
+        y=df_CPU_v03["used"],
+        name="genutzt",
+        marker_color=BENE_COLORS[1],
+    ),
+    row=1,
+    col=1,
+)
+
+figure_optimization.add_trace(
+    go.Bar(
+        x=df_CPU_v04["step"],
+        y=df_CPU_v04["allocated"],
+        name="zugewiesen",
+        marker_color=BENE_COLORS[0],
+        showlegend=False
+    ),
+    row=1,
+    col=2,
+)
+
+figure_optimization.add_trace(
+    go.Bar(
+        x=df_CPU_v04["step"],
+        y=df_CPU_v04["used"],
+        name="genutzt",
+        marker_color=BENE_COLORS[1],
+        showlegend=False
+    ),
+    row=1,
+    col=2,
+)
+
+figure_optimization.add_trace(
+    go.Bar(
+        x=df_memory_v03["step"],
+        y=df_memory_v03["allocated"],
+        name="zugewiesen",
+        marker_color=BENE_COLORS[0],
+        showlegend=False
+    ),
+    row=2,
+    col=1,
+)
+
+figure_optimization.add_trace(
+    go.Bar(
+        x=df_memory_v03["step"],
+        y=df_memory_v03["used"],
+        name="genutzt",
+        marker_color=BENE_COLORS[1],
+        showlegend=False
+    ),
+    row=2,
+    col=1,
+)
+
+figure_optimization.add_trace(
+    go.Bar(
+        x=df_memory_v04["step"],
+        y=df_memory_v04["allocated"],
+        name="zugewiesen",
+        marker_color=BENE_COLORS[0],
+        showlegend=False
+    ),
+    row=2,
+    col=2,
+)
+
+figure_optimization.add_trace(
+    go.Bar(
+        x=df_memory_v04["step"],
+        y=df_memory_v04["used"],
+        name="genutzt",
+        marker_color=BENE_COLORS[1],
+        showlegend=False
+    ),
+    row=2,
+    col=2,
+)
+
+figure_optimization.update_layout(
+    dict(
+        paper_bgcolor='rgba(0,0,0,0)',
+        template="plotly_white+bene",
+        showlegend=True,
+    )
+)
+
+figure_optimization.update_yaxes(title="CPU Kerne", row=1, col=1)
+figure_optimization.update_yaxes(title="Arbeitsspeicher in GB", row=2, col=1)
+figure_optimization.update_xaxes(showticklabels=False, row=1, col=1)
+figure_optimization.update_xaxes(showticklabels=False, row=1, col=2)
+
+figure_optimization.show()
+```
+
 ## Artefakt - Resilienz und Monitoring
 
-- Schritte werden neu gestartet mit mehrt Arbeitsspeicher
+- Schritte werden neu gestartet mit mehr Arbeitsspeicher
 - Email nach Abschluss Pipeline
 
-# Cloudnutzung Kostenberechnung
+# Kostenberechnung Cloudnutzung
 
-## Cloudnutzung Kostenberechnung - AWS
+## Kostenberechnung Cloudnutzung - AWS {.smaller}
+
+| Beschreibung  | EC2 Instanztyp | CPUs | Arbeitsspeicher in GB | Kosten in $ |
+|---------------|----------------|-----:|----------------------:|------------:|
+| Speicher      |                |      |                       | 2,45        |
+| Datentransfer |                |      |                       | 4,50        |
+| bam2fastq     | t3.large       | 2    | 8                     | 0,16        |
+| megSAPma      | c6i.4xlarge    | 16   | 32                    | 2,08        |
+| megSAPvc      | t3.2xlarge     | 8    | 32                    | 1,15        |
+| megSAPcn      | r5.2xlarge     | 8    | 64                    | 3,88        |
+| megSAPsv      | t3.small       | 2    | 2                     | 0,04        |
+| dragen        | f1.2xlarge     | 8    | 122                   | 12,08       |
+| **Summe**     |                |      |                       | **26,34**   |
+
+## Kostenberechnung Cloudnutzung - Upload mit AWS Snowball
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+::: {.center-y style='width:50%; text-align: center'}
+
+![AWS Snowball[^AmazonWebServices2023d]](images/snowball.png){height="250"}
+
+:::
+::::
+:::: {.column width="50%"}
+::: {.center-y style='width:50%'}
+
+- 300 $ für 10 Tage
+
+- 80 TB HDD Kapazität
+
+:::
+::::
+:::::
+
+[^AmazonWebServices2023d]: Quelle: @AmazonWebServices2023d
 
 # Diskussion
 
@@ -148,6 +384,7 @@ pio.templates["bene"] = go.layout.Template(
     )
 )
 pio.templates.default = "plotly_white+bene"
+
 figure_aoc_cpu_compared = go.Figure()
 
 df_CPU_v04 = pd.DataFrame(
@@ -201,6 +438,9 @@ figure_aoc_cpu_compared.update_layout(
 )
 figure_aoc_cpu_compared.show()
 ```
+::: {.notes}
+42,35 % Effizienter
+:::
 
 ## Diskussion - Optimierung Speichernutzung
 ```{python}
@@ -278,6 +518,25 @@ figure_aoc_memory_compared.show()
 
 ```
 
+::: {.notes}
+34.87 % Effizienter
+:::
+
+## Diskussion - Kostenersparnis Cloud
+
+:::: {.center-y}
+
+"Nur" 11,56 % günstiger durch Optimierung
+
+::: incremental
+
+-   Instanztypen passen nicht exakt
+
+-   DRAGEN größter Kostenfaktor
+
+:::
+::::
+
 # Fazit und Ausblick
 
 ## Fazit und Ausblick - Effizienzsteigerung
@@ -296,7 +555,7 @@ Nutzung Nextflow Tower
 :::
 ::::
 ::::  {.column width="50%"}
-::: {.center-y style='width:50%'}
+::: {.center-y style='width:50%; text-align: center'}
 
 ![Screenshot Nextflow Tower](images/tower_screenshot.png)
 
@@ -308,9 +567,9 @@ Nutzung Nextflow Tower
 
 ::::: {.columns}
 :::: {.column width="40%"}
-::: {.center-y style='width:40%'}
+::: {.center-y style='width:40%; text-align: center'}
 
-![NovaSeq X Plus Produktbild[^IlluminaInc2022a]](images/novaseq_x.png){height="300"}
+![NovaSeq X Plus Produktbild[^IlluminaInc2022a]](images/novaseq_x.png){height="250"}
 
 :::
 ::::
