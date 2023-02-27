@@ -21,13 +21,6 @@
     "text": "Einleitung - Ziele\n\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems\nNutzung von Cloud Infrastruktur"
   },
   {
-    "objectID": "thesis/thesis.html#literaturrecherche---ergebnisse",
-    "href": "thesis/thesis.html#literaturrecherche---ergebnisse",
-    "title": "Thesis Präsentation",
-    "section": "Literaturrecherche - Ergebnisse",
-    "text": "Literaturrecherche - Ergebnisse\n\n\n\nReferenzgenom\nSequenzierung\nAuswirkungen auf IT\nScientific Workflow Management Systeme"
-  },
-  {
     "objectID": "thesis/thesis.html#methode---design-science-research",
     "href": "thesis/thesis.html#methode---design-science-research",
     "title": "Thesis Präsentation",
@@ -39,14 +32,7 @@
     "href": "thesis/thesis.html#artefakt---entscheidung-für-nextflow",
     "title": "Thesis Präsentation",
     "section": "Artefakt - Entscheidung für Nextflow",
-    "text": "Artefakt - Entscheidung für Nextflow\nAuf Bais der Literaturrecherche"
-  },
-  {
-    "objectID": "thesis/thesis.html#artefakt---analyse-vorliegendes-skript",
-    "href": "thesis/thesis.html#artefakt---analyse-vorliegendes-skript",
-    "title": "Thesis Präsentation",
-    "section": "Artefakt - Analyse vorliegendes Skript",
-    "text": "Artefakt - Analyse vorliegendes Skript\nFunktion analysiert um zunächst 1:1 übernehmen zu können"
+    "text": "Artefakt - Entscheidung für Nextflow\nAuf Basis der Literaturrecherche"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---konvertierung-pipeline-zu-nextflow",
@@ -56,32 +42,53 @@
     "text": "Artefakt - Konvertierung Pipeline zu Nextflow\n\n\n\n\n\n\nInitialer Nextflow Workflow\n\n\n\n\n\n→\n\n\n\n\n\n\nNextflow Workflow mit BAM zu FastQ Konvertierung\n\n\n\n\n\n→\n\n\n\n\n\n\nFinaler Nextflow Workflow"
   },
   {
+    "objectID": "thesis/thesis.html#artefakt---optimierung",
+    "href": "thesis/thesis.html#artefakt---optimierung",
+    "title": "Thesis Präsentation",
+    "section": "Artefakt - Optimierung",
+    "text": "Artefakt - Optimierung"
+  },
+  {
     "objectID": "thesis/thesis.html#artefakt---resilienz-und-monitoring",
     "href": "thesis/thesis.html#artefakt---resilienz-und-monitoring",
     "title": "Thesis Präsentation",
     "section": "Artefakt - Resilienz und Monitoring",
-    "text": "Artefakt - Resilienz und Monitoring\n\nSchritte werden neu gestartet mit mehrt Arbeitsspeicher\nEmail nach Abschluss Pipeline"
+    "text": "Artefakt - Resilienz und Monitoring\n\nSchritte werden neu gestartet mit mehr Arbeitsspeicher\nEmail nach Abschluss Pipeline"
   },
   {
-    "objectID": "thesis/thesis.html#cloudnutzung-kostenberechnung---aws",
-    "href": "thesis/thesis.html#cloudnutzung-kostenberechnung---aws",
+    "objectID": "thesis/thesis.html#kostenberechnung-cloudnutzung---aws",
+    "href": "thesis/thesis.html#kostenberechnung-cloudnutzung---aws",
     "title": "Thesis Präsentation",
-    "section": "Cloudnutzung Kostenberechnung - AWS",
-    "text": "Cloudnutzung Kostenberechnung - AWS"
+    "section": "Kostenberechnung Cloudnutzung - AWS",
+    "text": "Kostenberechnung Cloudnutzung - AWS\n\n\n\n\n\n\n\n\n\n\nBeschreibung\nEC2 Instanztyp\nCPUs\nArbeitsspeicher in GB\nKosten in $\n\n\n\n\nSpeicher\n\n\n\n2,45\n\n\nDatentransfer\n\n\n\n4,50\n\n\nbam2fastq\nt3.large\n2\n8\n0,16\n\n\nmegSAPma\nc6i.4xlarge\n16\n32\n2,08\n\n\nmegSAPvc\nt3.2xlarge\n8\n32\n1,15\n\n\nmegSAPcn\nr5.2xlarge\n8\n64\n3,88\n\n\nmegSAPsv\nt3.small\n2\n2\n0,04\n\n\ndragen\nf1.2xlarge\n8\n122\n12,08\n\n\nSumme\n\n\n\n26,34"
+  },
+  {
+    "objectID": "thesis/thesis.html#kostenberechnung-cloudnutzung---upload-mit-aws-snowball",
+    "href": "thesis/thesis.html#kostenberechnung-cloudnutzung---upload-mit-aws-snowball",
+    "title": "Thesis Präsentation",
+    "section": "Kostenberechnung Cloudnutzung - Upload mit AWS Snowball",
+    "text": "Kostenberechnung Cloudnutzung - Upload mit AWS Snowball\n\n\n\n\n\n\nAWS Snowball1\n\n\n\n\n\n\n300 $ für 10 Tage\n80 TB HDD Kapazität\n\n\n\n\nQuelle: [2]"
   },
   {
     "objectID": "thesis/thesis.html#diskussion---optimierung-cpu-nutzung",
     "href": "thesis/thesis.html#diskussion---optimierung-cpu-nutzung",
     "title": "Thesis Präsentation",
     "section": "Diskussion - Optimierung CPU Nutzung",
-    "text": "Diskussion - Optimierung CPU Nutzung"
+    "text": "Diskussion - Optimierung CPU Nutzung\n\n\n\n                                                \n\n\n\n42,35 % Effizienter"
   },
   {
     "objectID": "thesis/thesis.html#diskussion---optimierung-speichernutzung",
     "href": "thesis/thesis.html#diskussion---optimierung-speichernutzung",
     "title": "Thesis Präsentation",
     "section": "Diskussion - Optimierung Speichernutzung",
-    "text": "Diskussion - Optimierung Speichernutzung"
+    "text": "Diskussion - Optimierung Speichernutzung\n\n\n\n                                                \n\n\n\n34.87 % Effizienter"
+  },
+  {
+    "objectID": "thesis/thesis.html#diskussion---kostenersparnis-cloud",
+    "href": "thesis/thesis.html#diskussion---kostenersparnis-cloud",
+    "title": "Thesis Präsentation",
+    "section": "Diskussion - Kostenersparnis Cloud",
+    "text": "Diskussion - Kostenersparnis Cloud\n\n“Nur” 11,56 % günstiger durch Optimierung\n\n\nInstanztypen passen nicht exakt\nDRAGEN größter Kostenfaktor"
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---effizienzsteigerung",
@@ -102,7 +109,7 @@
     "href": "thesis/thesis.html#fazit-und-ausblick---neuer-sequencer",
     "title": "Thesis Präsentation",
     "section": "Fazit und Ausblick - Neuer Sequencer",
-    "text": "Fazit und Ausblick - Neuer Sequencer\n\n\n\n\n\n\nNovaSeq X Plus Produktbild1\n\n\n\n\n\nEinführung NovaSeq X Plus ab Q3 2023 erfordert neue Pipeline\n\n\n\nQuelle: [2]"
+    "text": "Fazit und Ausblick - Neuer Sequencer\n\n\n\n\n\n\nNovaSeq X Plus Produktbild1\n\n\n\n\n\nEinführung NovaSeq X Plus ab Q3 2023 erfordert neue Pipeline\n\n\n\nQuelle: [3]"
   },
   {
     "objectID": "kompetenz_check/kompetenz_check.html#überblick",
