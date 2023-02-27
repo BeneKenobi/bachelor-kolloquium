@@ -1,87 +1,108 @@
 [
   {
-    "objectID": "thesis/thesis.html#auslöser",
-    "href": "thesis/thesis.html#auslöser",
+    "objectID": "thesis/thesis.html#einleitung---auslöser",
+    "href": "thesis/thesis.html#einleitung---auslöser",
     "title": "Thesis Präsentation",
-    "section": "Auslöser",
-    "text": "Auslöser\n\n\n\nWechsel des Referenzgenom in der genetischen Analyse Pipeline\nGRCh37 → GRCh38"
+    "section": "Einleitung - Auslöser",
+    "text": "Einleitung - Auslöser\n\n\n\nWechsel des Referenzgenom in der genetischen Analyse Pipeline\nGRCh37 → GRCh38"
   },
   {
-    "objectID": "thesis/thesis.html#probleme",
-    "href": "thesis/thesis.html#probleme",
+    "objectID": "thesis/thesis.html#einleitung---probleme",
+    "href": "thesis/thesis.html#einleitung---probleme",
     "title": "Thesis Präsentation",
-    "section": "Probleme",
-    "text": "Probleme\n\n\n\nProzessierungskapazitäten\nSpeicherplatz\nBandbreite\nProzessierungsdauer\nArchitektur"
+    "section": "Einleitung - Probleme",
+    "text": "Einleitung - Probleme\n\n\n\nProzessierungskapazitäten\nSpeicherplatz\nBandbreite\nProzessierungsdauer\nArchitektur"
   },
   {
-    "objectID": "thesis/thesis.html#ziele",
-    "href": "thesis/thesis.html#ziele",
+    "objectID": "thesis/thesis.html#einleitung---ziele",
+    "href": "thesis/thesis.html#einleitung---ziele",
     "title": "Thesis Präsentation",
-    "section": "Ziele",
-    "text": "Ziele\n\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems\nNutzung von Cloud Infrastruktur"
+    "section": "Einleitung - Ziele",
+    "text": "Einleitung - Ziele\n\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems\nNutzung von Cloud Infrastruktur"
   },
   {
-    "objectID": "thesis/thesis.html#ergebnisse",
-    "href": "thesis/thesis.html#ergebnisse",
+    "objectID": "thesis/thesis.html#literaturrecherche---ergebnisse",
+    "href": "thesis/thesis.html#literaturrecherche---ergebnisse",
     "title": "Thesis Präsentation",
-    "section": "Ergebnisse",
-    "text": "Ergebnisse\n\n\n\nReferenzgenom\nSequenzierung\nAuswirkungen auf IT\nScientific Workflow Management Systeme"
+    "section": "Literaturrecherche - Ergebnisse",
+    "text": "Literaturrecherche - Ergebnisse\n\n\n\nReferenzgenom\nSequenzierung\nAuswirkungen auf IT\nScientific Workflow Management Systeme"
   },
   {
-    "objectID": "thesis/thesis.html#design-science-research",
-    "href": "thesis/thesis.html#design-science-research",
+    "objectID": "thesis/thesis.html#methode---design-science-research",
+    "href": "thesis/thesis.html#methode---design-science-research",
     "title": "Thesis Präsentation",
-    "section": "Design Science Research",
-    "text": "Design Science Research\n\n\n\n\n\nVereinfachter DSR Prozess1\n\n\n\n\nBasierend auf [1] (vereinfacht)"
+    "section": "Methode - Design Science Research",
+    "text": "Methode - Design Science Research\n\n\n\n\n\nVereinfachter DSR Prozess1\n\n\n\n\nBasierend auf [1] (vereinfacht)"
   },
   {
-    "objectID": "thesis/thesis.html#entscheidung-für-nextflow",
-    "href": "thesis/thesis.html#entscheidung-für-nextflow",
+    "objectID": "thesis/thesis.html#artefakt---entscheidung-für-nextflow",
+    "href": "thesis/thesis.html#artefakt---entscheidung-für-nextflow",
     "title": "Thesis Präsentation",
-    "section": "Entscheidung für Nextflow",
-    "text": "Entscheidung für Nextflow"
+    "section": "Artefakt - Entscheidung für Nextflow",
+    "text": "Artefakt - Entscheidung für Nextflow\nAuf Bais der Literaturrecherche"
   },
   {
-    "objectID": "thesis/thesis.html#analyse-vorliegendes-skript",
-    "href": "thesis/thesis.html#analyse-vorliegendes-skript",
+    "objectID": "thesis/thesis.html#artefakt---analyse-vorliegendes-skript",
+    "href": "thesis/thesis.html#artefakt---analyse-vorliegendes-skript",
     "title": "Thesis Präsentation",
-    "section": "Analyse vorliegendes Skript",
-    "text": "Analyse vorliegendes Skript"
+    "section": "Artefakt - Analyse vorliegendes Skript",
+    "text": "Artefakt - Analyse vorliegendes Skript\nFunktion analysiert um zunächst 1:1 übernehmen zu können"
   },
   {
-    "objectID": "thesis/thesis.html#konvertierung-zu-nextflow",
-    "href": "thesis/thesis.html#konvertierung-zu-nextflow",
+    "objectID": "thesis/thesis.html#artefakt---konvertierung-pipeline-zu-nextflow",
+    "href": "thesis/thesis.html#artefakt---konvertierung-pipeline-zu-nextflow",
     "title": "Thesis Präsentation",
-    "section": "Konvertierung zu Nextflow",
-    "text": "Konvertierung zu Nextflow\n\n\n\n\n\n\nInitialer Nextflow Workflow\n\n\n\n\n\n→\n\n\n\n\n\n\nNextflow Workflow mit BAM zu FastQ Konvertierung\n\n\n\n\n\n→\n\n\n\n\n\n\nFinaler Nextflow Workflow"
+    "section": "Artefakt - Konvertierung Pipeline zu Nextflow",
+    "text": "Artefakt - Konvertierung Pipeline zu Nextflow\n\n\n\n\n\n\nInitialer Nextflow Workflow\n\n\n\n\n\n→\n\n\n\n\n\n\nNextflow Workflow mit BAM zu FastQ Konvertierung\n\n\n\n\n\n→\n\n\n\n\n\n\nFinaler Nextflow Workflow"
   },
   {
-    "objectID": "thesis/thesis.html#resilienz-und-monitoring",
-    "href": "thesis/thesis.html#resilienz-und-monitoring",
+    "objectID": "thesis/thesis.html#artefakt---resilienz-und-monitoring",
+    "href": "thesis/thesis.html#artefakt---resilienz-und-monitoring",
     "title": "Thesis Präsentation",
-    "section": "Resilienz und Monitoring",
-    "text": "Resilienz und Monitoring"
+    "section": "Artefakt - Resilienz und Monitoring",
+    "text": "Artefakt - Resilienz und Monitoring\n\nSchritte werden neu gestartet mit mehrt Arbeitsspeicher\nEmail nach Abschluss Pipeline"
   },
   {
-    "objectID": "thesis/thesis.html#aws",
-    "href": "thesis/thesis.html#aws",
+    "objectID": "thesis/thesis.html#cloudnutzung-kostenberechnung---aws",
+    "href": "thesis/thesis.html#cloudnutzung-kostenberechnung---aws",
     "title": "Thesis Präsentation",
-    "section": "AWS",
-    "text": "AWS"
+    "section": "Cloudnutzung Kostenberechnung - AWS",
+    "text": "Cloudnutzung Kostenberechnung - AWS"
   },
   {
-    "objectID": "thesis/thesis.html#optimierung-cpu-nutzung",
-    "href": "thesis/thesis.html#optimierung-cpu-nutzung",
+    "objectID": "thesis/thesis.html#diskussion---optimierung-cpu-nutzung",
+    "href": "thesis/thesis.html#diskussion---optimierung-cpu-nutzung",
     "title": "Thesis Präsentation",
-    "section": "Optimierung CPU Nutzung",
-    "text": "Optimierung CPU Nutzung"
+    "section": "Diskussion - Optimierung CPU Nutzung",
+    "text": "Diskussion - Optimierung CPU Nutzung"
   },
   {
-    "objectID": "thesis/thesis.html#optimierung-speichernutzung",
-    "href": "thesis/thesis.html#optimierung-speichernutzung",
+    "objectID": "thesis/thesis.html#diskussion---optimierung-speichernutzung",
+    "href": "thesis/thesis.html#diskussion---optimierung-speichernutzung",
     "title": "Thesis Präsentation",
-    "section": "Optimierung Speichernutzung",
-    "text": "Optimierung Speichernutzung"
+    "section": "Diskussion - Optimierung Speichernutzung",
+    "text": "Diskussion - Optimierung Speichernutzung"
+  },
+  {
+    "objectID": "thesis/thesis.html#fazit-und-ausblick---effizienzsteigerung",
+    "href": "thesis/thesis.html#fazit-und-ausblick---effizienzsteigerung",
+    "title": "Thesis Präsentation",
+    "section": "Fazit und Ausblick - Effizienzsteigerung",
+    "text": "Fazit und Ausblick - Effizienzsteigerung\nLuft nach oben"
+  },
+  {
+    "objectID": "thesis/thesis.html#fazit-und-ausblick---usability",
+    "href": "thesis/thesis.html#fazit-und-ausblick---usability",
+    "title": "Thesis Präsentation",
+    "section": "Fazit und Ausblick - Usability",
+    "text": "Fazit und Ausblick - Usability\n\n\n\nNutzung Nextflow Tower\n\n\n\n\n\n\nScreenshot Nextflow Tower"
+  },
+  {
+    "objectID": "thesis/thesis.html#fazit-und-ausblick---neuer-sequencer",
+    "href": "thesis/thesis.html#fazit-und-ausblick---neuer-sequencer",
+    "title": "Thesis Präsentation",
+    "section": "Fazit und Ausblick - Neuer Sequencer",
+    "text": "Fazit und Ausblick - Neuer Sequencer\n\n\n\n\n\n\nNovaSeq X Plus Produktbild1\n\n\n\n\n\nEinführung NovaSeq X Plus ab Q3 2023 erfordert neue Pipeline\n\n\n\nQuelle: [2]"
   },
   {
     "objectID": "kompetenz_check/kompetenz_check.html#überblick",
