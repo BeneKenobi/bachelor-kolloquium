@@ -29,15 +29,11 @@ GRCh37 → GRCh38
 
 :::: {.center-y}
 ::: incremental
--   Prozessierungskapazitäten
-
--   Speicherplatz
-
--   Bandbreite
-
--   Prozessierungsdauer
-
--   Architektur
+- Prozessierungskapazitäten
+- Speicherplatz
+- Bandbreite
+- Prozessierungsdauer
+- Architektur
 :::
 ::::
 
@@ -46,10 +42,10 @@ GRCh37 → GRCh38
 :::: {.center-y}
 ::: incremental
 
--   Professionalisierung durch Einführung eines\
-    **Scientific Workflow Management Systems**
+- Professionalisierung durch Einführung eines\
+    **Scientific Workflow Management Systems** (SWfMS) für bestehende "Medical Genetics Sequence Analysis Pipeline" *(megSAP)*
 
--   Nutzung von Cloud Infrastruktur
+- Mögliche Nutzung von Cloud Infrastruktur prüfen
 
 :::
 ::::
@@ -68,9 +64,30 @@ GRCh37 → GRCh38
 
 # Artefakt
 
-## Artefakt - Entscheidung für Nextflow
+## Artefakt - Entscheidung für SWfMS {.smaller}
 
-Auf Basis der Literaturrecherche
+:::::: {.columns}
+::::: {.column width="40%"}
+:::: {.center-y style='width:40%; text-align: center'}
+![](images/nextflow.png)
+::::
+:::::
+::::: {.column width="60%"}
+:::: {.center-y style='width:60%'}
+Entscheidung auf Basis der Literaturrecherche
+
+::: incremental
+- Domain-specific language
+  - Portierbar
+  - Versionierbar
+- Support bereits eingesetzter Architektur
+  - SLURM
+  - Singularity
+:::
+::::
+:::::
+::::::
+
 
 ## Artefakt - Konvertierung Pipeline zu Nextflow {.smaller}
 
@@ -321,9 +338,14 @@ figure_optimization.show()
 ```
 
 ## Artefakt - Resilienz und Monitoring
-
+::::: {.blocker}
+:::: {.center-y}
+::: incremental
 - Schritte werden neu gestartet mit mehr Arbeitsspeicher
 - Email nach Abschluss Pipeline
+:::
+::::
+:::::
 
 # Kostenberechnung Cloudnutzung
 
@@ -526,22 +548,30 @@ figure_aoc_memory_compared.show()
 
 :::: {.center-y}
 
-"Nur" 11,56 % günstiger durch Optimierung
+"Nur" 11,56 % günstiger durch Optimierung: 26,33 \$ statt 29,77 \$
 
 ::: incremental
-
--   Instanztypen passen nicht exakt
-
--   DRAGEN größter Kostenfaktor
-
+- Instanztypen passen nicht exakt
+- DRAGEN größter Kostenfaktor
 :::
 ::::
+::: {.notes}
+- 26,33 \$ statt 29,77 \$ 
+- Lizenz DRAGEN kostet ca. 40 € (bei voller Auslastung)
+- HPC Kosten nicht schätzbar
+:::
 
 # Fazit und Ausblick
 
 ## Fazit und Ausblick - Effizienzsteigerung
 
-Luft nach oben
+:::: {.center-y}
+::: incremental
+- Weitere, kontinuierliche Optimierung
+- Aufteilung von *megSAP* in kleinere Schritte
+- Speichern im *CRAM* Dateiformat
+:::
+::::
 
 ## Fazit und Ausblick - Usability
 

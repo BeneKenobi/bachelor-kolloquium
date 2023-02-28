@@ -1,4 +1,5 @@
 institute: "FOM Hochschule für Oekonomie & Management<br/> Medizinische Hochschule Hannover, Institut für Humangenetik"
+orcid: "0000-0002-1977-7878"
 format: 
   revealjs:
     theme: [default, ../custom.scss]
@@ -11,6 +12,8 @@ format:
     toc-title: "Agenda"
     transition: slide
     parallax-background-image: images/background.png
-    parallax-background-size: "5120px 2784px"
+    parallax-background-size: "4096px 2048px"
+    template-partials:
+      - title-slide.html
 
 image: "preview.png"

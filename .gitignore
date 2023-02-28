@@ -2,3 +2,4 @@
 *.html
 *_files/
 _site/
+!thesis/title-slide.html
