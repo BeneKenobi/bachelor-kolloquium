@@ -18,7 +18,7 @@
     "href": "thesis/thesis.html#einleitung---ziele",
     "title": "Thesis Präsentation",
     "section": "Einleitung - Ziele",
-    "text": "Einleitung - Ziele\n\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems\nNutzung von Cloud Infrastruktur"
+    "text": "Einleitung - Ziele\n\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems (SWfMS) für bestehende “Medical Genetics Sequence Analysis Pipeline” (megSAP)\nMögliche Nutzung von Cloud Infrastruktur prüfen"
   },
   {
     "objectID": "thesis/thesis.html#methode---design-science-research",
@@ -28,11 +28,11 @@
     "text": "Methode - Design Science Research\n\n\n\n\n\nVereinfachter DSR Prozess1\n\n\n\n\nBasierend auf [1] (vereinfacht)"
   },
   {
-    "objectID": "thesis/thesis.html#artefakt---entscheidung-für-nextflow",
-    "href": "thesis/thesis.html#artefakt---entscheidung-für-nextflow",
+    "objectID": "thesis/thesis.html#artefakt---entscheidung-für-swfms",
+    "href": "thesis/thesis.html#artefakt---entscheidung-für-swfms",
     "title": "Thesis Präsentation",
-    "section": "Artefakt - Entscheidung für Nextflow",
-    "text": "Artefakt - Entscheidung für Nextflow\nAuf Basis der Literaturrecherche"
+    "section": "Artefakt - Entscheidung für SWfMS",
+    "text": "Artefakt - Entscheidung für SWfMS\n\n\n\n\n\n\n\nEntscheidung auf Basis der Literaturrecherche\n\n\nDomain-specific language\n\nPortierbar\nVersionierbar\n\nSupport bereits eingesetzter Architektur\n\nSLURM\nSingularity"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---konvertierung-pipeline-zu-nextflow",
@@ -53,7 +53,7 @@
     "href": "thesis/thesis.html#artefakt---resilienz-und-monitoring",
     "title": "Thesis Präsentation",
     "section": "Artefakt - Resilienz und Monitoring",
-    "text": "Artefakt - Resilienz und Monitoring\n\nSchritte werden neu gestartet mit mehr Arbeitsspeicher\nEmail nach Abschluss Pipeline"
+    "text": "Artefakt - Resilienz und Monitoring\n\n\n\n\nSchritte werden neu gestartet mit mehr Arbeitsspeicher\nEmail nach Abschluss Pipeline"
   },
   {
     "objectID": "thesis/thesis.html#kostenberechnung-cloudnutzung---aws",
@@ -88,14 +88,14 @@
     "href": "thesis/thesis.html#diskussion---kostenersparnis-cloud",
     "title": "Thesis Präsentation",
     "section": "Diskussion - Kostenersparnis Cloud",
-    "text": "Diskussion - Kostenersparnis Cloud\n\n“Nur” 11,56 % günstiger durch Optimierung\n\n\nInstanztypen passen nicht exakt\nDRAGEN größter Kostenfaktor"
+    "text": "Diskussion - Kostenersparnis Cloud\n\n“Nur” 11,56 % günstiger durch Optimierung: 26,33 $ statt 29,77 $\n\n\nInstanztypen passen nicht exakt\nDRAGEN größter Kostenfaktor\n\n\n\n\n\n26,33 $ statt 29,77 $\nLizenz DRAGEN kostet ca. 40 € (bei voller Auslastung)\nHPC Kosten nicht schätzbar"
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---effizienzsteigerung",
     "href": "thesis/thesis.html#fazit-und-ausblick---effizienzsteigerung",
     "title": "Thesis Präsentation",
     "section": "Fazit und Ausblick - Effizienzsteigerung",
-    "text": "Fazit und Ausblick - Effizienzsteigerung\nLuft nach oben"
+    "text": "Fazit und Ausblick - Effizienzsteigerung\n\n\n\nWeitere, kontinuierliche Optimierung\nAufteilung von megSAP in kleinere Schritte\nSpeichern im CRAM Dateiformat"
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---usability",
