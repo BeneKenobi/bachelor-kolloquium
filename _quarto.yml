@@ -1,8 +1,6 @@
 project:
   type: website
 
-author: "Benedikt Schnur"
-
 website: 
   site-url: "https://benekenobi.github.io/bachelor-kolloquium/"
 

@@ -2,7 +2,7 @@
 title: "Thesis Präsentation"
 subtitle: "Implementing a Scientific Workflow Management System to Conduct the Transition to a Different Reference Genome of a Genetic Analysis Pipeline"
 bibliography: references.bib
-csl: "ieee.csl"
+csl: "chicago-fullnote-bibliography.csl"
 ---
 
 # Einleitung
@@ -10,7 +10,6 @@ csl: "ieee.csl"
 ## Einleitung - Auslöser
 
 ::::: {.columns}
-
 :::: {.column width="60%"}
 ::: {.center-y style='width:60%'}
 Wechsel des Referenzgenom in der genetischen Analyse Pipeline
@@ -24,31 +23,29 @@ GRCh37 → GRCh38
 :::
 ::::
 :::::
+::: {.notes}
+- Genome Reference Consortium Human Build 
+- GRCh37 2009
+- GRCh38 2017
+:::
 
 ## Einleitung - Probleme
 
-:::: {.center-y}
-::: incremental
+::: {.center-y}
 - Prozessierungskapazitäten
 - Speicherplatz
 - Bandbreite
 - Prozessierungsdauer
 - Architektur
 :::
-::::
 
 ## Einleitung - Ziele
 
-:::: {.center-y}
-::: incremental
-
+::: {.center-y}
 - Professionalisierung durch Einführung eines\
     **Scientific Workflow Management Systems** (SWfMS) für bestehende "Medical Genetics Sequence Analysis Pipeline" *(megSAP)*
-
 - Mögliche Nutzung von Cloud Infrastruktur prüfen
-
 :::
-::::
 
 # Methode
 
@@ -56,27 +53,24 @@ GRCh37 → GRCh38
 
 :::: {.blocker}
 ::: {.center-y}
-![Vereinfachter DSR Prozess[^pfeffers]](images/basic_dsr.svg)
+![Vereinfachter DSR Prozess [@Peffers2007]](images/basic_dsr.svg)
 :::
 ::::
-
-[^pfeffers]: Basierend auf @Peffers2007 (vereinfacht)
 
 # Artefakt
 
 ## Artefakt - Entscheidung für SWfMS {.smaller}
 
-:::::: {.columns}
-::::: {.column width="40%"}
-:::: {.center-y style='width:40%; text-align: center'}
+::::: {.columns}
+:::: {.column width="40%"}
+::: {.center-y style='width:40%; text-align: center'}
 ![](images/nextflow.png)
+:::
 ::::
-:::::
-::::: {.column width="60%"}
-:::: {.center-y style='width:60%'}
+:::: {.column width="60%"}
+::: {.center-y style='width:60%'}
 Entscheidung auf Basis der Literaturrecherche
 
-::: incremental
 - Domain-specific language
   - Portierbar
   - Versionierbar
@@ -86,39 +80,24 @@ Entscheidung auf Basis der Literaturrecherche
 :::
 ::::
 :::::
-::::::
 
 
-## Artefakt - Konvertierung Pipeline zu Nextflow {.smaller}
+## Artefakt - Konvertierung Pipeline zu Nextflow 
 
-::::: {.columns}
+::: {.center-y style='text-align: center'}
+![](images/nextflow_dag_v0.1.svg){height="250"}
+:::
 
-:::: {.column width="30%"}
-::: {.fragment .center-y style='width:30%;text-align: center'}
-![Initialer Nextflow Workflow](images/nextflow_dag_v0.1.svg){height="250"}
+## Artefakt - BAM zu FastQ Konvertierung
+
+::: {.center-y style='text-align: center'}
+![](images/nextflow_dag_v0.2.svg){height="400"}
 :::
-::::
-:::: {.column width="5%"}
-::: {.fragment .center-y style='width:5%;text-align: center'}
-→
+
+## Artefakt - megSAP aufteilen
+::: {.center-y style='text-align: center'}
+![](images/nextflow_dag_v0.3.svg){height="400"}
 :::
-::::
-:::: {.column width="30%"}
-::: {.fragment style='text-align: center'}
-![Nextflow Workflow mit BAM zu FastQ Konvertierung](images/nextflow_dag_v0.2.svg){height="400"}
-:::
-::::
-:::: {.column width="5%"}
-::: {.fragment .center-y style='width:5%;text-align: center'}
-→
-:::
-::::
-:::: {.column width="30%"}
-::: {.fragment style='text-align: center'}
-![Finaler Nextflow Workflow](images/nextflow_dag_v0.3.svg){height="400"}
-:::
-::::
-:::::
 
 ## Artefakt - Optimierung {.small}
 ```{python}
@@ -338,14 +317,12 @@ figure_optimization.show()
 ```
 
 ## Artefakt - Resilienz und Monitoring
-::::: {.blocker}
-:::: {.center-y}
-::: incremental
+:::: {.blocker}
+::: {.center-y}
 - Schritte werden neu gestartet mit mehr Arbeitsspeicher
 - Email nach Abschluss Pipeline
 :::
 ::::
-:::::
 
 # Kostenberechnung Cloudnutzung
 
@@ -366,26 +343,18 @@ figure_optimization.show()
 ## Kostenberechnung Cloudnutzung - Upload mit AWS Snowball
 
 ::::: {.columns}
-
 :::: {.column width="50%"}
 ::: {.center-y style='width:50%; text-align: center'}
-
-![AWS Snowball[^AmazonWebServices2023d]](images/snowball.png){height="250"}
-
+![AWS Snowball[@AmazonWebServices2023d]](images/snowball.png){height="250"}
 :::
 ::::
 :::: {.column width="50%"}
 ::: {.center-y style='width:50%'}
-
 - 300 $ für 10 Tage
-
 - 80 TB HDD Kapazität
-
 :::
 ::::
 :::::
-
-[^AmazonWebServices2023d]: Quelle: @AmazonWebServices2023d
 
 # Diskussion
 
@@ -546,15 +515,15 @@ figure_aoc_memory_compared.show()
 
 ## Diskussion - Kostenersparnis Cloud
 
-:::: {.center-y}
+::: {.center-y}
 
-"Nur" 11,56 % günstiger durch Optimierung: 26,33 \$ statt 29,77 \$
+"Nur" 11,56 % günstiger durch Optimierung:
 
-::: incremental
+26,33 \$ statt 29,77 \$
+
 - Instanztypen passen nicht exakt
 - DRAGEN größter Kostenfaktor
 :::
-::::
 ::: {.notes}
 - 26,33 \$ statt 29,77 \$ 
 - Lizenz DRAGEN kostet ca. 40 € (bei voller Auslastung)
@@ -565,30 +534,23 @@ figure_aoc_memory_compared.show()
 
 ## Fazit und Ausblick - Effizienzsteigerung
 
-:::: {.center-y}
-::: incremental
+::: {.center-y}
 - Weitere, kontinuierliche Optimierung
 - Aufteilung von *megSAP* in kleinere Schritte
 - Speichern im *CRAM* Dateiformat
 :::
-::::
 
 ## Fazit und Ausblick - Usability
 
 ::::: {.columns}
-
 :::: {.column width="50%"}
 ::: {.center-y style='width:50%'}
-
 Nutzung Nextflow Tower
-
 :::
 ::::
 ::::  {.column width="50%"}
 ::: {.center-y style='width:50%; text-align: center'}
-
 ![Screenshot Nextflow Tower](images/tower_screenshot.png)
-
 :::
 ::::
 :::::
@@ -598,21 +560,30 @@ Nutzung Nextflow Tower
 ::::: {.columns}
 :::: {.column width="40%"}
 ::: {.center-y style='width:40%; text-align: center'}
-
-![NovaSeq X Plus Produktbild[^IlluminaInc2022a]](images/novaseq_x.png){height="250"}
-
+![NovaSeq X Plus Produktbild [@IlluminaInc2022a]](images/novaseq_x.png){height="250"}
 :::
 ::::
 ::::  {.column width="60%"}
 ::: {.center-y style='width:60%'}
-
 Einführung NovaSeq X Plus ab Q3 2023 erfordert neue Pipeline
-
 :::
 ::::
 :::::
 
-[^IlluminaInc2022a]: Quelle: @IlluminaInc2022a
+## Fazit und Ausblick - Referenzgenom
+::::: {.columns}
+:::: {.column width="40%"}
+::: {.center-y style='width:40%; text-align: center'}
+- ALT aware
+- Graph Genom
+:::
+::::
+::::  {.column width="60%"}
+::: {.center-y style='width:60%; text-align: center'}
+![Eine Region eines Hefe-Genoms als Variation Graph [@Garrison2018]](images/graph_genome.png){.border}
+:::
+::::
+:::::
 
 # Quellenverzeichnis {visibility="uncounted" .unnumbered .unlisted}
 
