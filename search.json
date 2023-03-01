@@ -4,42 +4,56 @@
     "href": "thesis/thesis.html#einleitung---auslöser",
     "title": "Thesis Präsentation",
     "section": "Einleitung - Auslöser",
-    "text": "Einleitung - Auslöser\n\n\n\nWechsel des Referenzgenom in der genetischen Analyse Pipeline\nGRCh37 → GRCh38"
+    "text": "Einleitung - Auslöser\n\n\n\nWechsel des Referenzgenom in der genetischen Analyse Pipeline\nGRCh37 → GRCh38\n\n\n\n\n\n\n\n\n\nGenome Reference Consortium Human Build\nGRCh37 2009\nGRCh38 2017"
   },
   {
     "objectID": "thesis/thesis.html#einleitung---probleme",
     "href": "thesis/thesis.html#einleitung---probleme",
     "title": "Thesis Präsentation",
     "section": "Einleitung - Probleme",
-    "text": "Einleitung - Probleme\n\n\n\nProzessierungskapazitäten\nSpeicherplatz\nBandbreite\nProzessierungsdauer\nArchitektur"
+    "text": "Einleitung - Probleme\n\n\nProzessierungskapazitäten\nSpeicherplatz\nBandbreite\nProzessierungsdauer\nArchitektur"
   },
   {
     "objectID": "thesis/thesis.html#einleitung---ziele",
     "href": "thesis/thesis.html#einleitung---ziele",
     "title": "Thesis Präsentation",
     "section": "Einleitung - Ziele",
-    "text": "Einleitung - Ziele\n\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems (SWfMS) für bestehende “Medical Genetics Sequence Analysis Pipeline” (megSAP)\nMögliche Nutzung von Cloud Infrastruktur prüfen"
+    "text": "Einleitung - Ziele\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems (SWfMS) für bestehende “Medical Genetics Sequence Analysis Pipeline” (megSAP)\nMögliche Nutzung von Cloud Infrastruktur prüfen"
   },
   {
     "objectID": "thesis/thesis.html#methode---design-science-research",
     "href": "thesis/thesis.html#methode---design-science-research",
     "title": "Thesis Präsentation",
     "section": "Methode - Design Science Research",
-    "text": "Methode - Design Science Research\n\n\n\n\n\nVereinfachter DSR Prozess1\n\n\n\n\nBasierend auf [1] (vereinfacht)"
+    "text": "Methode - Design Science Research\n\n\n\n\n\nVereinfachter DSR Prozess1\n\n\n\n\nKen Peffers et al., „A Design Science Research Methodology for Information Systems Research“, Journal of Management Information Systems 24, Nr. 3 (2007, Dezember): 45–77, https://doi.org/10.2753/mis0742-1222240302."
   },
   {
     "objectID": "thesis/thesis.html#artefakt---entscheidung-für-swfms",
     "href": "thesis/thesis.html#artefakt---entscheidung-für-swfms",
     "title": "Thesis Präsentation",
     "section": "Artefakt - Entscheidung für SWfMS",
-    "text": "Artefakt - Entscheidung für SWfMS\n\n\n\n\n\n\n\nEntscheidung auf Basis der Literaturrecherche\n\n\nDomain-specific language\n\nPortierbar\nVersionierbar\n\nSupport bereits eingesetzter Architektur\n\nSLURM\nSingularity"
+    "text": "Artefakt - Entscheidung für SWfMS\n\n\n\n\n\n\n\nEntscheidung auf Basis der Literaturrecherche\n\nDomain-specific language\n\nPortierbar\nVersionierbar\n\nSupport bereits eingesetzter Architektur\n\nSLURM\nSingularity"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---konvertierung-pipeline-zu-nextflow",
     "href": "thesis/thesis.html#artefakt---konvertierung-pipeline-zu-nextflow",
     "title": "Thesis Präsentation",
     "section": "Artefakt - Konvertierung Pipeline zu Nextflow",
-    "text": "Artefakt - Konvertierung Pipeline zu Nextflow\n\n\n\n\n\n\nInitialer Nextflow Workflow\n\n\n\n\n\n→\n\n\n\n\n\n\nNextflow Workflow mit BAM zu FastQ Konvertierung\n\n\n\n\n\n→\n\n\n\n\n\n\nFinaler Nextflow Workflow"
+    "text": "Artefakt - Konvertierung Pipeline zu Nextflow"
+  },
+  {
+    "objectID": "thesis/thesis.html#artefakt---bam-zu-fastq-konvertierung",
+    "href": "thesis/thesis.html#artefakt---bam-zu-fastq-konvertierung",
+    "title": "Thesis Präsentation",
+    "section": "Artefakt - BAM zu FastQ Konvertierung",
+    "text": "Artefakt - BAM zu FastQ Konvertierung"
+  },
+  {
+    "objectID": "thesis/thesis.html#artefakt---megsap-aufteilen",
+    "href": "thesis/thesis.html#artefakt---megsap-aufteilen",
+    "title": "Thesis Präsentation",
+    "section": "Artefakt - megSAP aufteilen",
+    "text": "Artefakt - megSAP aufteilen"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---optimierung",
@@ -53,7 +67,7 @@
     "href": "thesis/thesis.html#artefakt---resilienz-und-monitoring",
     "title": "Thesis Präsentation",
     "section": "Artefakt - Resilienz und Monitoring",
-    "text": "Artefakt - Resilienz und Monitoring\n\n\n\n\nSchritte werden neu gestartet mit mehr Arbeitsspeicher\nEmail nach Abschluss Pipeline"
+    "text": "Artefakt - Resilienz und Monitoring\n\n\n\nSchritte werden neu gestartet mit mehr Arbeitsspeicher\nEmail nach Abschluss Pipeline"
   },
   {
     "objectID": "thesis/thesis.html#kostenberechnung-cloudnutzung---aws",
@@ -67,7 +81,7 @@
     "href": "thesis/thesis.html#kostenberechnung-cloudnutzung---upload-mit-aws-snowball",
     "title": "Thesis Präsentation",
     "section": "Kostenberechnung Cloudnutzung - Upload mit AWS Snowball",
-    "text": "Kostenberechnung Cloudnutzung - Upload mit AWS Snowball\n\n\n\n\n\n\nAWS Snowball1\n\n\n\n\n\n\n300 $ für 10 Tage\n80 TB HDD Kapazität\n\n\n\n\nQuelle: [2]"
+    "text": "Kostenberechnung Cloudnutzung - Upload mit AWS Snowball\n\n\n\n\n\n\nAWS Snowball1\n\n\n\n\n\n\n300 $ für 10 Tage\n80 TB HDD Kapazität\n\n\n\n\nAmazon Web Services, „Using an AWS Snowball Device - AWS Snowball“, 2023, https://docs.aws.amazon.com/snowball/latest/ug/using-device.html."
   },
   {
     "objectID": "thesis/thesis.html#diskussion---optimierung-cpu-nutzung",
@@ -88,14 +102,14 @@
     "href": "thesis/thesis.html#diskussion---kostenersparnis-cloud",
     "title": "Thesis Präsentation",
     "section": "Diskussion - Kostenersparnis Cloud",
-    "text": "Diskussion - Kostenersparnis Cloud\n\n“Nur” 11,56 % günstiger durch Optimierung: 26,33 $ statt 29,77 $\n\n\nInstanztypen passen nicht exakt\nDRAGEN größter Kostenfaktor\n\n\n\n\n\n26,33 $ statt 29,77 $\nLizenz DRAGEN kostet ca. 40 € (bei voller Auslastung)\nHPC Kosten nicht schätzbar"
+    "text": "Diskussion - Kostenersparnis Cloud\n\n“Nur” 11,56 % günstiger durch Optimierung:\n26,33 $ statt 29,77 $\n\nInstanztypen passen nicht exakt\nDRAGEN größter Kostenfaktor\n\n\n\n\n26,33 $ statt 29,77 $\nLizenz DRAGEN kostet ca. 40 € (bei voller Auslastung)\nHPC Kosten nicht schätzbar"
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---effizienzsteigerung",
     "href": "thesis/thesis.html#fazit-und-ausblick---effizienzsteigerung",
     "title": "Thesis Präsentation",
     "section": "Fazit und Ausblick - Effizienzsteigerung",
-    "text": "Fazit und Ausblick - Effizienzsteigerung\n\n\n\nWeitere, kontinuierliche Optimierung\nAufteilung von megSAP in kleinere Schritte\nSpeichern im CRAM Dateiformat"
+    "text": "Fazit und Ausblick - Effizienzsteigerung\n\n\nWeitere, kontinuierliche Optimierung\nAufteilung von megSAP in kleinere Schritte\nSpeichern im CRAM Dateiformat"
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---usability",
@@ -109,7 +123,14 @@
     "href": "thesis/thesis.html#fazit-und-ausblick---neuer-sequencer",
     "title": "Thesis Präsentation",
     "section": "Fazit und Ausblick - Neuer Sequencer",
-    "text": "Fazit und Ausblick - Neuer Sequencer\n\n\n\n\n\n\nNovaSeq X Plus Produktbild1\n\n\n\n\n\nEinführung NovaSeq X Plus ab Q3 2023 erfordert neue Pipeline\n\n\n\nQuelle: [3]"
+    "text": "Fazit und Ausblick - Neuer Sequencer\n\n\n\n\n\n\nNovaSeq X Plus Produktbild1\n\n\n\n\n\nEinführung NovaSeq X Plus ab Q3 2023 erfordert neue Pipeline\n\n\n\nIllumina, Inc, „NovaSeq X Series Product Brochure“, 2022, https://emea.illumina.com/content/dam/illumina/gcs/assembled-assets/marketing-literature/novaseq-x-series-brochure-m-us-00202/novaseq-x-series-brochure-m-us-00202.pdf."
+  },
+  {
+    "objectID": "thesis/thesis.html#fazit-und-ausblick---referenzgenom",
+    "href": "thesis/thesis.html#fazit-und-ausblick---referenzgenom",
+    "title": "Thesis Präsentation",
+    "section": "Fazit und Ausblick - Referenzgenom",
+    "text": "Fazit und Ausblick - Referenzgenom\n\n\n\n\nALT aware\nGraph Genom\n\n\n\n\n\n\n\nEine Region eines Hefe-Genoms als Variation Graph1\n\n\n\n\n\nErik Garrison et al., „Variation Graph Toolkit Improves Read Mapping by Representing Genetic Variation in the Reference“, Nature Biotechnology 36, Nr. 9, 9 (2018, Oktober): 875–79, https://doi.org/10.1038/nbt.4227."
   },
   {
     "objectID": "kompetenz_check/kompetenz_check.html#überblick",
@@ -137,6 +158,6 @@
     "href": "index.html",
     "title": "Bachelor Thesis Kolloquium Präsentationen",
     "section": "",
-    "text": "Kompetenz-Check Auswertung\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThesis Präsentation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Kompetenz-Check Auswertung\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThesis Präsentation\n\n\n\n\n\n\nBenedikt Schnur\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
