@@ -81,15 +81,12 @@ Entscheidung auf Basis der Literaturrecherche
 ::::
 :::::
 
-
 ## Artefakt - Konvertierung Pipeline zu Nextflow 
-
 ::: {.center-y style='text-align: center'}
 ![](images/nextflow_dag_v0.1.svg){height="250"}
 :::
 
 ## Artefakt - BAM zu FastQ Konvertierung
-
 ::: {.center-y style='text-align: center'}
 ![](images/nextflow_dag_v0.2.svg){height="400"}
 :::
@@ -99,222 +96,10 @@ Entscheidung auf Basis der Literaturrecherche
 ![](images/nextflow_dag_v0.3.svg){height="400"}
 :::
 
-## Artefakt - Optimierung {.small}
-```{python}
-import pandas as pd
-import plotly.io as pio
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-
-BENE_COLORS = (
-    "#47476B",
-    "#CDA715",
-    "#318986",
-)
-pio.templates["bene"] = go.layout.Template(
-    layout=go.Layout(
-        colorway=BENE_COLORS,
-        paper_bgcolor='rgba(0,0,0,0)',
-    )
-)
-pio.templates.default = "plotly_white+bene"
-
-df_CPU_v03 = pd.DataFrame(
-    {
-        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
-        "allocated": [12, 12, 12, 12, 12],
-        "used": [12 * 0.287, 12 * 0.531, 12 * 0.086, 12 * 0.157, 12 * 0.017],
-        "time": [
-            pd.Timedelta("2 hours 54 min"),
-            pd.Timedelta("2 hours 54 min") + pd.Timedelta("2 hours 40 min"),
-            pd.Timedelta("2 hours 54 min")
-            + pd.Timedelta("2 hours 40 min")
-            + pd.Timedelta("6 hours 11 min"),
-            pd.Timedelta("2 hours 54 min")
-            + pd.Timedelta("2 hours 40 min")
-            + pd.Timedelta("6 hours 11 min")
-            + pd.Timedelta("1 hours 3 min"),
-            pd.Timedelta("2 hours 54 min")
-            + pd.Timedelta("2 hours 40 min")
-            + pd.Timedelta("6 hours 11 min")
-            + pd.Timedelta("1 hours 3 min")
-            + pd.Timedelta("3 min 51 s"),
-        ],
-    }
-)
-
-df_CPU_v04 = pd.DataFrame(
-    {
-        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
-        "allocated": [15, 8, 2, 2, 2],
-        "used": [15 * 0.211, 8 * 0.588, 2 * 0.468, 2 * 0.91, 2 * 0.114],
-        "time": [
-            pd.Timedelta("2 hours 41 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min") + pd.Timedelta("3 min 26 s"),
-        ],
-    }
-)
-
-df_memory_v03 = pd.DataFrame(
-    {
-        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
-        "allocated": [50, 50, 50, 50, 50],
-        "used": [50 * 0.02, 50 * 0.328, 50 * 0.819, 50 * 0.022, 50 * 0.007],
-        "time": [
-            pd.Timedelta("2 hours 54 min"),
-            pd.Timedelta("2 hours 54 min") + pd.Timedelta("2 hours 40 min"),
-            pd.Timedelta("2 hours 54 min")
-            + pd.Timedelta("2 hours 40 min")
-            + pd.Timedelta("6 hours 11 min"),
-            pd.Timedelta("2 hours 54 min")
-            + pd.Timedelta("2 hours 40 min")
-            + pd.Timedelta("6 hours 11 min")
-            + pd.Timedelta("1 hours 3 min"),
-            pd.Timedelta("2 hours 54 min")
-            + pd.Timedelta("2 hours 40 min")
-            + pd.Timedelta("6 hours 11 min")
-            + pd.Timedelta("1 hours 3 min")
-            + pd.Timedelta("3 min 51 s"),
-        ],
-    }
-)
-
-df_memory_v04 = pd.DataFrame(
-    {
-        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
-        "allocated": [2, 20, 48, 2, 2],
-        "used": [2 * 0.494, 20 * 0.556, 48 * 0.379, 2 * 0.555, 2 * 0.335],
-        "time": [
-            pd.Timedelta("2 hours 41 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min") + pd.Timedelta("3 min 26 s"),
-        ],
-    }
-)
-
-figure_optimization = make_subplots(
-    rows=2,
-    cols=2,
-    shared_yaxes=True,
-    subplot_titles=("Initital","Optimiert"),
-    horizontal_spacing=0.025,
-    vertical_spacing=0.05,
-    )
-
-figure_optimization.add_trace(
-    go.Bar(
-        x=df_CPU_v03["step"],
-        y=df_CPU_v03["allocated"],
-        name="zugewiesen",
-        marker_color=BENE_COLORS[0],
-    ),
-    row=1,
-    col=1,
-)
-
-figure_optimization.add_trace(
-    go.Bar(
-        x=df_CPU_v03["step"],
-        y=df_CPU_v03["used"],
-        name="genutzt",
-        marker_color=BENE_COLORS[1],
-    ),
-    row=1,
-    col=1,
-)
-
-figure_optimization.add_trace(
-    go.Bar(
-        x=df_CPU_v04["step"],
-        y=df_CPU_v04["allocated"],
-        name="zugewiesen",
-        marker_color=BENE_COLORS[0],
-        showlegend=False
-    ),
-    row=1,
-    col=2,
-)
-
-figure_optimization.add_trace(
-    go.Bar(
-        x=df_CPU_v04["step"],
-        y=df_CPU_v04["used"],
-        name="genutzt",
-        marker_color=BENE_COLORS[1],
-        showlegend=False
-    ),
-    row=1,
-    col=2,
-)
-
-figure_optimization.add_trace(
-    go.Bar(
-        x=df_memory_v03["step"],
-        y=df_memory_v03["allocated"],
-        name="zugewiesen",
-        marker_color=BENE_COLORS[0],
-        showlegend=False
-    ),
-    row=2,
-    col=1,
-)
-
-figure_optimization.add_trace(
-    go.Bar(
-        x=df_memory_v03["step"],
-        y=df_memory_v03["used"],
-        name="genutzt",
-        marker_color=BENE_COLORS[1],
-        showlegend=False
-    ),
-    row=2,
-    col=1,
-)
-
-figure_optimization.add_trace(
-    go.Bar(
-        x=df_memory_v04["step"],
-        y=df_memory_v04["allocated"],
-        name="zugewiesen",
-        marker_color=BENE_COLORS[0],
-        showlegend=False
-    ),
-    row=2,
-    col=2,
-)
-
-figure_optimization.add_trace(
-    go.Bar(
-        x=df_memory_v04["step"],
-        y=df_memory_v04["used"],
-        name="genutzt",
-        marker_color=BENE_COLORS[1],
-        showlegend=False
-    ),
-    row=2,
-    col=2,
-)
-
-figure_optimization.update_layout(
-    dict(
-        paper_bgcolor='rgba(0,0,0,0)',
-        template="plotly_white+bene",
-        showlegend=True,
-    )
-)
-
-figure_optimization.update_yaxes(title="CPU Kerne", row=1, col=1)
-figure_optimization.update_yaxes(title="Arbeitsspeicher in GB", row=2, col=1)
-figure_optimization.update_xaxes(showticklabels=False, row=1, col=1)
-figure_optimization.update_xaxes(showticklabels=False, row=1, col=2)
-
-figure_optimization.show()
-```
+## Artefakt - Optimierung
+::: {.center-y style='text-align: center'}
+![](images/figure_optimization.svg)
+:::
 
 ## Artefakt - Resilienz und Monitoring
 :::: {.blocker}
@@ -359,156 +144,17 @@ figure_optimization.show()
 # Diskussion
 
 ## Diskussion - Optimierung CPU Nutzung
-```{python}
-import pandas as pd
-import plotly.io as pio
-import plotly.graph_objects as go
-
-BENE_COLORS = (
-    "#47476B",
-    "#CDA715",
-    "#318986",
-)
-pio.templates["bene"] = go.layout.Template(
-    layout=go.Layout(
-        colorway=BENE_COLORS,
-    )
-)
-pio.templates.default = "plotly_white+bene"
-
-figure_aoc_cpu_compared = go.Figure()
-
-df_CPU_v04 = pd.DataFrame(
-    {
-        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
-        "allocated": [15, 8, 2, 2, 2],
-        "used": [15 * 0.211, 8 * 0.588, 2 * 0.468, 2 * 0.91, 2 * 0.114],
-        "time": [
-            pd.Timedelta("2 hours 41 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min") + pd.Timedelta("3 min 26 s"),
-        ],
-    }
-)
-
-figure_aoc_cpu_compared.add_trace(
-    go.Scatter(
-        x=[0,11.5],
-        y=[12,12],
-        fill="tozeroy",
-        line_color=BENE_COLORS[0],
-        mode="lines",
-        name="initital zugewiesen",
-    )
-)
-
-figure_aoc_cpu_compared.add_trace(
-    go.Scatter(
-        x=pd.concat([pd.Series([0]), df_CPU_v04["time"].dt.total_seconds() / 60 / 60]),
-        y=pd.concat([pd.Series([df_CPU_v04["allocated"][0]]), df_CPU_v04["allocated"]]),
-        fill="tozeroy",
-        line_color=BENE_COLORS[2],
-        #fillcolor=BENE_COLORS[1],
-        line_shape="vh",
-        mode="lines",
-        name="optimiert zugewiesen",
-    )
-)
-
-figure_aoc_cpu_compared.update_layout(
-    dict(
-        paper_bgcolor='rgba(0,0,0,0)',
-        margin=dict(l=20, r=20, t=20, b=20),
-        showlegend=True,
-        legend=dict(orientation="h", yanchor="bottom", y=1, xanchor="center", x=0.5),
-        xaxis_title="Zeit in h",
-        yaxis_title="CPU Kerne",
-    )
-)
-figure_aoc_cpu_compared.show()
-```
+::: {style='text-align: center'}
+![](images/figure_aoc_cpu_compared.svg)
+:::
 ::: {.notes}
 42,35 % Effizienter
 :::
 
 ## Diskussion - Optimierung Speichernutzung
-```{python}
-import pandas as pd
-import plotly.io as pio
-import plotly.graph_objects as go
-
-BENE_COLORS = (
-    "#47476B",
-    "#CDA715",
-    "#318986",
-)
-pio.templates["bene"] = go.layout.Template(
-    layout=go.Layout(
-        colorway=BENE_COLORS,
-    )
-)
-pio.templates.default = "plotly_white+bene"
-
-df_memory_v04 = pd.DataFrame(
-    {
-        "step": ["megSAPma", "megSAPvc", "megSAPcn", "megSAPsv", "megSAPdb"],
-        "allocated": [2, 20, 48, 2, 2],
-        "used": [2 * 0.494, 20 * 0.556, 48 * 0.379, 2 * 0.555, 2 * 0.335],
-        "time": [
-            pd.Timedelta("2 hours 41 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min"),
-            pd.Timedelta("2 hours 41 min") + pd.Timedelta("2 hours 59 min") + pd.Timedelta("6 hours 23 min") + pd.Timedelta("1 hours 28 min") + pd.Timedelta("3 min 26 s"),
-        ],
-    }
-)
-
-figure_aoc_memory_compared = go.Figure()
-
-figure_aoc_memory_compared.add_trace(
-    go.Scatter(
-        x=[0,11.5],
-        y=[50,50],
-        fill="tozeroy",
-        line_color=BENE_COLORS[0],
-        #fillcolor=CUD_COLORS[1],
-        mode="lines",
-        name="initial zugewiesen",
-    )
-)
-
-figure_aoc_memory_compared.add_trace(
-    go.Scatter(
-        x=pd.concat([pd.Series([0]), df_memory_v04["time"].dt.total_seconds() / 60 / 60]),
-        y=pd.concat([pd.Series([df_memory_v04["allocated"][0]]), df_memory_v04["allocated"]]),
-        fill="tozeroy",
-        line_color=BENE_COLORS[2],
-        #fillcolor=CUD_COLORS[1],
-        line_shape="vh",
-        mode="lines",
-        name="optimiert zugewiesen",
-    )
-)
-
-figure_aoc_memory_compared.update_layout(
-    dict(
-        paper_bgcolor='rgba(0,0,0,0)',
-        margin=dict(l=20, r=20, t=20, b=20),
-        template="plotly_white+bene",
-        showlegend=True,
-        legend=dict(orientation="h", yanchor="bottom", y=1, xanchor="center", x=0.5),
-        xaxis_title="Zeit in h",
-        yaxis_title="Arbeitsspeicher in GB",
-    )
-)
-
-figure_aoc_memory_compared.show()
-
-```
-
+::: {style='text-align: center'}
+![](images/figure_aoc_memory_compared.svg)
+:::
 ::: {.notes}
 34.87 % Effizienter
 :::
