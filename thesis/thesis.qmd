@@ -27,6 +27,7 @@ GRCh37 → GRCh38
 - Genome Reference Consortium Human Build 
 - GRCh37 2009
 - GRCh38 2017
+Puzzzleteile zusammensetzen -> Mapping
 :::
 
 ## Einleitung - Probleme
@@ -86,6 +87,9 @@ Entscheidung auf Basis der Literaturrecherche
 ::: {.center-y style='text-align: center'}
 ![](images/nextflow_dag_v0.1.svg){height="250"}
 :::
+::: {.notes}
+Direct Acyclic Graph (DAG)
+:::
 
 ## Artefakt - BAM zu FastQ Konvertierung
 ::: {.center-y style='text-align: center'}
@@ -110,9 +114,9 @@ Entscheidung auf Basis der Literaturrecherche
 :::
 ::::
 
-# Kostenberechnung Cloudnutzung
+# Cloudnutzung
 
-## Kostenberechnung Cloudnutzung - AWS {.smaller}
+## Cloudnutzung - Kostenberechnung AWS {.smaller}
 
 | Beschreibung  | EC2 Instanztyp | CPUs | Arbeitsspeicher in GB | Kosten in $ |
 |---------------|----------------|-----:|----------------------:|------------:|
@@ -126,7 +130,7 @@ Entscheidung auf Basis der Literaturrecherche
 | dragen        | f1.2xlarge     | 8    | 122                   | 12,08       |
 | **Summe**     |                |      |                       | **26,34**   |
 
-## Kostenberechnung Cloudnutzung - Upload mit AWS Snowball
+## Cloudnutzung - Kostenberechnung Upload mit AWS Snowball
 
 ::::: {.columns}
 :::: {.column width="50%"}
