@@ -32,7 +32,7 @@
     "href": "thesis/thesis.html#artefakt---entscheidung-für-swfms",
     "title": "Thesis Präsentation",
     "section": "Artefakt - Entscheidung für SWfMS",
-    "text": "Artefakt - Entscheidung für SWfMS\n\n\n\n\n\n\n\nEntscheidung auf Basis der Literaturrecherche\n\nDomain-specific language\n\nPortierbar\nVersionierbar\n\nSupport bereits eingesetzter Architektur\n\nSLURM\nSingularity"
+    "text": "Artefakt - Entscheidung für SWfMS\n\n\n\n\n\n\n\nEntscheidung auf Basis der Literaturrecherche\n\nDomain-specific language\n\nPortierbar\nVersionierbar\n\nSupport bereits eingesetzter Architektur\n\nSLURM\nSingularity\n\nFehlerbehandlung"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---konvertierung-pipeline-zu-nextflow",
@@ -123,14 +123,14 @@
     "href": "thesis/thesis.html#fazit-und-ausblick---neuer-sequencer",
     "title": "Thesis Präsentation",
     "section": "Fazit und Ausblick - Neuer Sequencer",
-    "text": "Fazit und Ausblick - Neuer Sequencer\n\n\n\n\n\n\nNovaSeq X Plus Produktbild1\n\n\n\n\n\nEinführung NovaSeq X Plus ab Q3 2023 erfordert neue Pipeline\n\n\n\nIllumina, Inc, „NovaSeq X Series Product Brochure“, 2022, https://emea.illumina.com/content/dam/illumina/gcs/assembled-assets/marketing-literature/novaseq-x-series-brochure-m-us-00202/novaseq-x-series-brochure-m-us-00202.pdf."
+    "text": "Fazit und Ausblick - Neuer Sequencer\n\n\n\n\n\n\nNovaSeq X Plus Produktbild1\n\n\n\n\n\nEinführung NovaSeq X Plus ab Q3 2023 erfordert starke Anpassungen der Pipeline\n\n\n\n\nBereits gute Vorabeit mit Nextflow\n\nIllumina, Inc, „NovaSeq X Series Product Brochure“, 2022, https://emea.illumina.com/content/dam/illumina/gcs/assembled-assets/marketing-literature/novaseq-x-series-brochure-m-us-00202/novaseq-x-series-brochure-m-us-00202.pdf."
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---referenzgenom",
     "href": "thesis/thesis.html#fazit-und-ausblick---referenzgenom",
     "title": "Thesis Präsentation",
     "section": "Fazit und Ausblick - Referenzgenom",
-    "text": "Fazit und Ausblick - Referenzgenom\n\n\n\n\nALT aware\nGraph Genom\n\n\n\n\n\n\n\nEine Region eines Hefe-Genoms als Variation Graph1\n\n\n\n\n\nErik Garrison et al., „Variation Graph Toolkit Improves Read Mapping by Representing Genetic Variation in the Reference“, Nature Biotechnology 36, Nr. 9, 9 (2018, Oktober): 875–79, https://doi.org/10.1038/nbt.4227."
+    "text": "Fazit und Ausblick - Referenzgenom\n\n\n\n\nALT Aware\nTelomere-to-Telomere (T2T)\nGraph Genom\n\n\n\n\n\n\n\nEine Region eines Hefe-Genoms als Variation Graph1\n\n\n\n\n\nErik Garrison et al., „Variation Graph Toolkit Improves Read Mapping by Representing Genetic Variation in the Reference“, Nature Biotechnology 36, Nr. 9, 9 (2018, Oktober): 875–79, https://doi.org/10.1038/nbt.4227."
   },
   {
     "objectID": "kompetenz_check/kompetenz_check.html#überblick",
