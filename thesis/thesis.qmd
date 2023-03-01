@@ -77,6 +77,7 @@ Entscheidung auf Basis der Literaturrecherche
 - Support bereits eingesetzter Architektur
   - SLURM
   - Singularity
+- Fehlerbehandlung
 :::
 ::::
 :::::
@@ -211,16 +212,20 @@ Nutzung Nextflow Tower
 ::::
 ::::  {.column width="60%"}
 ::: {.center-y style='width:60%'}
-Einführung NovaSeq X Plus ab Q3 2023 erfordert neue Pipeline
+Einführung NovaSeq X Plus ab Q3 2023 erfordert starke Anpassungen der Pipeline
 :::
 ::::
 :::::
+::: {.notes}
+Bereits gute Vorabeit mit Nextflow
+:::
 
 ## Fazit und Ausblick - Referenzgenom
 ::::: {.columns}
 :::: {.column width="40%"}
 ::: {.center-y style='width:40%; text-align: center'}
-- ALT aware
+- ALT Aware
+- Telomere-to-Telomere (T2T)
 - Graph Genom
 :::
 ::::
