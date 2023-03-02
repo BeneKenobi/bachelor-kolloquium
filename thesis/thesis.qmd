@@ -27,7 +27,7 @@ GRCh37 → GRCh38
 - Genome Reference Consortium Human Build 
 - GRCh37 2009
 - GRCh38 2017
-Puzzzleteile zusammensetzen -> Mapping
+- Puzzzleteile zusammensetzen → Mapping
 :::
 
 ## Einleitung - Probleme
@@ -39,12 +39,21 @@ Puzzzleteile zusammensetzen -> Mapping
 - Prozessierungsdauer
 - Architektur
 :::
+::: {.notes}
+- HPC Cluster 24h ausgelastet sobald Daten von Sequencer aus Routinediagnostik verarbeitet werden
+- 1500 Genome, je 50 GB → 77 TB benötigt
+- 14 Tage hochladen wenn am Stück möglich
+- Bei altem Tempo 59 Tage
+- Von Naturwissenschaftlern implementiert → Best Practices der IT nicht angewendet
+:::
 
 ## Einleitung - Ziele
 
 ::: {.center-y}
 - Professionalisierung durch Einführung eines\
-    **Scientific Workflow Management Systems** (SWfMS) für bestehende "Medical Genetics Sequence Analysis Pipeline" *(megSAP)*
+    **Scientific Workflow Management Systems** (SWfMS)\
+    für die bestehende\
+    *Medical Genetics Sequence Analysis Pipeline (megSAP)*
 - Mögliche Nutzung von Cloud Infrastruktur prüfen
 :::
 
@@ -99,6 +108,13 @@ Direct Acyclic Graph (DAG)
 ## Artefakt - megSAP aufteilen
 ::: {.center-y style='text-align: center'}
 ![](images/nextflow_dag_v0.3.svg){height="400"}
+:::
+::: {.notes}
+- Mapping
+- Variant Calling
+- Copy Number Variant Calling
+- Structural Variant Calling
+- Datenbank Import
 :::
 
 ## Artefakt - Optimierung
