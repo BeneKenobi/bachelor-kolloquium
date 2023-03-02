@@ -256,7 +256,7 @@ Bereits gute Vorabeit mit Nextflow
 ::::
 :::::
 
-## Danke! {visibility="uncounted" .unnumbered .unlisted .smaller background-color="#47476B"}
+## Danke {visibility="uncounted" .unnumbered .unlisted .smaller background-color="#47476B"}
 ::: {.absolute bottom=0}
 **Medizinische Hochschule Hannover**  
 **Institut für Humangenetik**
