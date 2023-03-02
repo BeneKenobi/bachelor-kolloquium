@@ -256,6 +256,23 @@ Bereits gute Vorabeit mit Nextflow
 ::::
 :::::
 
+## Danke! {visibility="uncounted" .unnumbered .unlisted .smaller background-color="#47476B"}
+::: {.absolute bottom=0}
+**Medizinische Hochschule Hannover**  
+**Institut für Humangenetik**
+
+Prof. Dr. med. Brigitte Schlegelberger  
+Dr. rer. nat. Gunnar Schmidt  
+Dr. rer. nat. Winfried Hofmann  
+
+**FOM Hochschule für Oekonomie & Management**
+
+Prof. Dr. Stephan Kluth
+:::
+
+::: footer
+:::
+
 # Quellenverzeichnis {visibility="uncounted" .unnumbered .unlisted}
 
 ::: {#refs}
