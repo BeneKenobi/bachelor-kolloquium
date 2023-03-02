@@ -2,135 +2,142 @@
   {
     "objectID": "thesis/thesis.html#einleitung---auslöser",
     "href": "thesis/thesis.html#einleitung---auslöser",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Einleitung - Auslöser",
-    "text": "Einleitung - Auslöser\n\n\n\nWechsel des Referenzgenom in der genetischen Analyse Pipeline\nGRCh37 → GRCh38\n\n\n\n\n\n\n\n\n\nGenome Reference Consortium Human Build\nGRCh37 2009\nGRCh38 2017 Puzzzleteile zusammensetzen -> Mapping"
+    "text": "Einleitung - Auslöser\n\n\n\nWechsel des Referenzgenom in der genetischen Analyse Pipeline\nGRCh37 → GRCh38\n\n\n\n\n\n\n\n\n\nGenome Reference Consortium Human Build\nGRCh37 2009\nGRCh38 2017\nPuzzzleteile zusammensetzen → Mapping"
   },
   {
     "objectID": "thesis/thesis.html#einleitung---probleme",
     "href": "thesis/thesis.html#einleitung---probleme",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Einleitung - Probleme",
-    "text": "Einleitung - Probleme\n\n\nProzessierungskapazitäten\nSpeicherplatz\nBandbreite\nProzessierungsdauer\nArchitektur"
+    "text": "Einleitung - Probleme\n\n\nProzessierungskapazitäten\nSpeicherplatz\nBandbreite\nProzessierungsdauer\nArchitektur\n\n\n\n\nHPC Cluster 24h ausgelastet sobald Daten von Sequencer aus Routinediagnostik verarbeitet werden\n1500 Genome, je 50 GB → 77 TB benötigt\n14 Tage hochladen wenn am Stück möglich\nBei altem Tempo 59 Tage\nVon Naturwissenschaftlern implementiert → Best Practices der IT nicht angewendet"
   },
   {
     "objectID": "thesis/thesis.html#einleitung---ziele",
     "href": "thesis/thesis.html#einleitung---ziele",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Einleitung - Ziele",
-    "text": "Einleitung - Ziele\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems (SWfMS) für bestehende “Medical Genetics Sequence Analysis Pipeline” (megSAP)\nMögliche Nutzung von Cloud Infrastruktur prüfen"
+    "text": "Einleitung - Ziele\n\n\nProfessionalisierung durch Einführung eines\nScientific Workflow Management Systems (SWfMS)\nfür die bestehende\nMedical Genetics Sequence Analysis Pipeline (megSAP)\nMögliche Nutzung von Cloud Infrastruktur prüfen"
   },
   {
     "objectID": "thesis/thesis.html#methode---design-science-research",
     "href": "thesis/thesis.html#methode---design-science-research",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Methode - Design Science Research",
     "text": "Methode - Design Science Research\n\n\n\n\n\nVereinfachter DSR Prozess1\n\n\n\n\nKen Peffers et al., „A Design Science Research Methodology for Information Systems Research“, Journal of Management Information Systems 24, Nr. 3 (2007, Dezember): 45–77, https://doi.org/10.2753/mis0742-1222240302."
   },
   {
     "objectID": "thesis/thesis.html#artefakt---entscheidung-für-swfms",
     "href": "thesis/thesis.html#artefakt---entscheidung-für-swfms",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Artefakt - Entscheidung für SWfMS",
     "text": "Artefakt - Entscheidung für SWfMS\n\n\n\n\n\n\n\nEntscheidung auf Basis der Literaturrecherche\n\nDomain-specific language\n\nPortierbar\nVersionierbar\n\nSupport bereits eingesetzter Architektur\n\nSLURM\nSingularity\n\nFehlerbehandlung"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---konvertierung-pipeline-zu-nextflow",
     "href": "thesis/thesis.html#artefakt---konvertierung-pipeline-zu-nextflow",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Artefakt - Konvertierung Pipeline zu Nextflow",
     "text": "Artefakt - Konvertierung Pipeline zu Nextflow\n\n\n\n\nDirect Acyclic Graph (DAG)"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---bam-zu-fastq-konvertierung",
     "href": "thesis/thesis.html#artefakt---bam-zu-fastq-konvertierung",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Artefakt - BAM zu FastQ Konvertierung",
     "text": "Artefakt - BAM zu FastQ Konvertierung"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---megsap-aufteilen",
     "href": "thesis/thesis.html#artefakt---megsap-aufteilen",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Artefakt - megSAP aufteilen",
-    "text": "Artefakt - megSAP aufteilen"
+    "text": "Artefakt - megSAP aufteilen\n\n\n\n\n\nMapping\nVariant Calling\nCopy Number Variant Calling\nStructural Variant Calling\nDatenbank Import"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---optimierung",
     "href": "thesis/thesis.html#artefakt---optimierung",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Artefakt - Optimierung",
     "text": "Artefakt - Optimierung"
   },
   {
     "objectID": "thesis/thesis.html#artefakt---resilienz-und-monitoring",
     "href": "thesis/thesis.html#artefakt---resilienz-und-monitoring",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Artefakt - Resilienz und Monitoring",
     "text": "Artefakt - Resilienz und Monitoring\n\n\n\nSchritte werden neu gestartet mit mehr Arbeitsspeicher\nEmail nach Abschluss Pipeline"
   },
   {
     "objectID": "thesis/thesis.html#cloudnutzung---kostenberechnung-aws",
     "href": "thesis/thesis.html#cloudnutzung---kostenberechnung-aws",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Cloudnutzung - Kostenberechnung AWS",
     "text": "Cloudnutzung - Kostenberechnung AWS\n\n\n\n\n\n\n\n\n\n\nBeschreibung\nEC2 Instanztyp\nCPUs\nArbeitsspeicher in GB\nKosten in $\n\n\n\n\nSpeicher\n\n\n\n2,45\n\n\nDatentransfer\n\n\n\n4,50\n\n\nbam2fastq\nt3.large\n2\n8\n0,16\n\n\nmegSAPma\nc6i.4xlarge\n16\n32\n2,08\n\n\nmegSAPvc\nt3.2xlarge\n8\n32\n1,15\n\n\nmegSAPcn\nr5.2xlarge\n8\n64\n3,88\n\n\nmegSAPsv\nt3.small\n2\n2\n0,04\n\n\ndragen\nf1.2xlarge\n8\n122\n12,08\n\n\nSumme\n\n\n\n26,34"
   },
   {
     "objectID": "thesis/thesis.html#cloudnutzung---kostenberechnung-upload-mit-aws-snowball",
     "href": "thesis/thesis.html#cloudnutzung---kostenberechnung-upload-mit-aws-snowball",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Cloudnutzung - Kostenberechnung Upload mit AWS Snowball",
     "text": "Cloudnutzung - Kostenberechnung Upload mit AWS Snowball\n\n\n\n\n\n\nAWS Snowball1\n\n\n\n\n\n\n300 $ für 10 Tage\n80 TB HDD Kapazität\n\n\n\n\nAmazon Web Services, „Using an AWS Snowball Device - AWS Snowball“, 2023, https://docs.aws.amazon.com/snowball/latest/ug/using-device.html."
   },
   {
     "objectID": "thesis/thesis.html#diskussion---optimierung-cpu-nutzung",
     "href": "thesis/thesis.html#diskussion---optimierung-cpu-nutzung",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Diskussion - Optimierung CPU Nutzung",
     "text": "Diskussion - Optimierung CPU Nutzung\n\n\n\n\n42,35 % Effizienter"
   },
   {
     "objectID": "thesis/thesis.html#diskussion---optimierung-speichernutzung",
     "href": "thesis/thesis.html#diskussion---optimierung-speichernutzung",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Diskussion - Optimierung Speichernutzung",
     "text": "Diskussion - Optimierung Speichernutzung\n\n\n\n\n34.87 % Effizienter"
   },
   {
     "objectID": "thesis/thesis.html#diskussion---kostenersparnis-cloud",
     "href": "thesis/thesis.html#diskussion---kostenersparnis-cloud",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Diskussion - Kostenersparnis Cloud",
     "text": "Diskussion - Kostenersparnis Cloud\n\n“Nur” 11,56 % günstiger durch Optimierung:\n26,33 $ statt 29,77 $\n\nInstanztypen passen nicht exakt\nDRAGEN größter Kostenfaktor\n\n\n\n\n26,33 $ statt 29,77 $\nLizenz DRAGEN kostet ca. 40 € (bei voller Auslastung)\nHPC Kosten nicht schätzbar"
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---effizienzsteigerung",
     "href": "thesis/thesis.html#fazit-und-ausblick---effizienzsteigerung",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Fazit und Ausblick - Effizienzsteigerung",
     "text": "Fazit und Ausblick - Effizienzsteigerung\n\n\nWeitere, kontinuierliche Optimierung\nAufteilung von megSAP in kleinere Schritte\nSpeichern im CRAM Dateiformat"
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---usability",
     "href": "thesis/thesis.html#fazit-und-ausblick---usability",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Fazit und Ausblick - Usability",
     "text": "Fazit und Ausblick - Usability\n\n\n\nNutzung Nextflow Tower\n\n\n\n\n\n\nScreenshot Nextflow Tower"
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---neuer-sequencer",
     "href": "thesis/thesis.html#fazit-und-ausblick---neuer-sequencer",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Fazit und Ausblick - Neuer Sequencer",
     "text": "Fazit und Ausblick - Neuer Sequencer\n\n\n\n\n\n\nNovaSeq X Plus Produktbild1\n\n\n\n\n\nEinführung NovaSeq X Plus ab Q3 2023 erfordert starke Anpassungen der Pipeline\n\n\n\n\nBereits gute Vorabeit mit Nextflow\n\nIllumina, Inc, „NovaSeq X Series Product Brochure“, 2022, https://emea.illumina.com/content/dam/illumina/gcs/assembled-assets/marketing-literature/novaseq-x-series-brochure-m-us-00202/novaseq-x-series-brochure-m-us-00202.pdf."
   },
   {
     "objectID": "thesis/thesis.html#fazit-und-ausblick---referenzgenom",
     "href": "thesis/thesis.html#fazit-und-ausblick---referenzgenom",
-    "title": "Thesis Präsentation",
+    "title": "",
     "section": "Fazit und Ausblick - Referenzgenom",
     "text": "Fazit und Ausblick - Referenzgenom\n\n\n\n\nALT Aware\nTelomere-to-Telomere (T2T)\nGraph Genom\n\n\n\n\n\n\n\nEine Region eines Hefe-Genoms als Variation Graph1\n\n\n\n\n\nErik Garrison et al., „Variation Graph Toolkit Improves Read Mapping by Representing Genetic Variation in the Reference“, Nature Biotechnology 36, Nr. 9, 9 (2018, Oktober): 875–79, https://doi.org/10.1038/nbt.4227."
+  },
+  {
+    "objectID": "thesis/thesis.html#danke",
+    "href": "thesis/thesis.html#danke",
+    "title": "",
+    "section": "Danke!",
+    "text": "Danke!\n\nMedizinische Hochschule Hannover\nInstitut für Humangenetik\nProf. Dr. med. Brigitte Schlegelberger\nDr. rer. nat. Gunnar Schmidt\nDr. rer. nat. Winfried Hofmann\nFOM Hochschule für Oekonomie & Management\nProf. Dr. Stephan Kluth"
   },
   {
     "objectID": "kompetenz_check/kompetenz_check.html#überblick",

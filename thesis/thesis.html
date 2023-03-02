@@ -354,8 +354,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Thesis Präsentation</h1>
-  <p class="subtitle">Implementing a Scientific Workflow Management System to Conduct the Transition to a Different Reference Genome of a Genetic Analysis Pipeline</p>
+  <p class="title">Thesis Präsentation</p>
+  <h1 class="subtitle">Implementing a Scientific Workflow Management System to Conduct the Transition to a Different Reference Genome of a Genetic Analysis Pipeline</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -404,7 +404,8 @@ Benedikt Schnur <a href="https://orcid.org/0000-0002-1977-7878" class="quarto-ti
 <ul>
 <li>Genome Reference Consortium Human Build</li>
 <li>GRCh37 2009</li>
-<li>GRCh38 2017 Puzzzleteile zusammensetzen -&gt; Mapping</li>
+<li>GRCh38 2017</li>
+<li>Puzzzleteile zusammensetzen → Mapping</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -429,13 +430,34 @@ Benedikt Schnur <a href="https://orcid.org/0000-0002-1977-7878" class="quarto-ti
 <li>Architektur</li>
 </ul>
 </div>
+<aside class="notes">
+<ul>
+<li>HPC Cluster 24h ausgelastet sobald Daten von Sequencer aus Routinediagnostik verarbeitet werden</li>
+<li>1500 Genome, je 50 GB → 77 TB benötigt</li>
+<li>14 Tage hochladen wenn am Stück möglich</li>
+<li>Bei altem Tempo 59 Tage</li>
+<li>Von Naturwissenschaftlern implementiert → Best Practices der IT nicht angewendet</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="einleitung---ziele" class="slide level2">
 <h2>Einleitung - Ziele</h2>
 <div class="center-y">
 <ul>
 <li>Professionalisierung durch Einführung eines<br>
-<strong>Scientific Workflow Management Systems</strong> (SWfMS) für bestehende “Medical Genetics Sequence Analysis Pipeline” <em>(megSAP)</em></li>
+<strong>Scientific Workflow Management Systems</strong> (SWfMS)<br>
+für die bestehende<br>
+<em>Medical Genetics Sequence Analysis Pipeline (megSAP)</em></li>
 <li>Mögliche Nutzung von Cloud Infrastruktur prüfen</li>
 </ul>
 </div>
@@ -520,6 +542,25 @@ Benedikt Schnur <a href="https://orcid.org/0000-0002-1977-7878" class="quarto-ti
 <div class="center-y" style="text-align: center">
 <p><img data-src="images/nextflow_dag_v0.3.svg" height="400"></p>
 </div>
+<aside class="notes">
+<ul>
+<li>Mapping</li>
+<li>Variant Calling</li>
+<li>Copy Number Variant Calling</li>
+<li>Structural Variant Calling</li>
+<li>Datenbank Import</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="artefakt---optimierung" class="slide level2">
 <h2>Artefakt - Optimierung</h2>
@@ -810,7 +851,22 @@ Benedikt Schnur <a href="https://orcid.org/0000-0002-1977-7878" class="quarto-ti
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn4"><p><a href="#/quellenverzeichnis" role="doc-biblioref" onclick="">Erik Garrison et al., <span>„Variation Graph Toolkit Improves Read Mapping by Representing Genetic Variation in the Reference“</span>, <em>Nature Biotechnology</em> 36, Nr. 9, 9 (2018, Oktober): 875–79, </a><a href="#/quellenverzeichnis" role="doc-biblioref" onclick="">https://doi.org/10.1038/nbt.4227</a>.</p></li></ol></aside></section></section>
+<aside><ol class="aside-footnotes"><li id="fn4"><p><a href="#/quellenverzeichnis" role="doc-biblioref" onclick="">Erik Garrison et al., <span>„Variation Graph Toolkit Improves Read Mapping by Representing Genetic Variation in the Reference“</span>, <em>Nature Biotechnology</em> 36, Nr. 9, 9 (2018, Oktober): 875–79, </a><a href="#/quellenverzeichnis" role="doc-biblioref" onclick="">https://doi.org/10.1038/nbt.4227</a>.</p></li></ol></aside></section>
+<section id="danke" class="slide level2 unnumbered unlisted smaller" data-visibility="uncounted" data-background-color="#47476B">
+<h2>Danke!</h2>
+<div class="absolute" style="bottom: 0px; ">
+<p><strong>Medizinische Hochschule Hannover</strong><br>
+<strong>Institut für Humangenetik</strong></p>
+<p>Prof.&nbsp;Dr.&nbsp;med. Brigitte Schlegelberger<br>
+Dr.&nbsp;rer. nat. Gunnar Schmidt<br>
+Dr.&nbsp;rer. nat. Winfried Hofmann</p>
+<p><strong>FOM Hochschule für Oekonomie &amp; Management</strong></p>
+<p>Prof.&nbsp;Dr.&nbsp;Stephan Kluth</p>
+</div>
+<div class="footer">
+
+</div>
+</section></section>
 <section id="quellenverzeichnis" class="title-slide slide level1 unnumbered unlisted smaller scrollable" data-visibility="uncounted">
 <h1>Quellenverzeichnis</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
