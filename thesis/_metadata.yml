@@ -15,5 +15,7 @@ format:
     transition: slide
     parallax-background-image: images/background-25.png
     parallax-background-size: "4096px 2048px"
+    template-partials:
+      - title-slide.html
 
 image: "preview.png"
