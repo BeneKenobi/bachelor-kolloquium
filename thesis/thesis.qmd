@@ -202,6 +202,7 @@ Direct Acyclic Graph (DAG)
 ## Fazit und Ausblick - Effizienzsteigerung
 
 ::: {.center-y}
+- Übernahme in diagnostische Routine
 - Weitere, kontinuierliche Optimierung
 - Aufteilung von *megSAP* in kleinere Schritte
 - Speichern im *CRAM* Dateiformat
