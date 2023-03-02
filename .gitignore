@@ -2,4 +2,5 @@
 *.html
 *_files/
 _site/
+.vscode/
 !thesis/title-slide.html
