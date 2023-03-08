@@ -81,7 +81,7 @@
     "href": "thesis/thesis.html#cloudnutzung---kostenberechnung-upload-mit-aws-snowball",
     "title": "",
     "section": "Cloudnutzung - Kostenberechnung Upload mit AWS Snowball",
-    "text": "Cloudnutzung - Kostenberechnung Upload mit AWS Snowball\n\n\n\n\n\n\nAWS Snowball1\n\n\n\n\n\n\n300 $ für 10 Tage\n80 TB HDD Kapazität\n\n\n\n\nAmazon Web Services, „Using an AWS Snowball Device - AWS Snowball“, 2023, https://docs.aws.amazon.com/snowball/latest/ug/using-device.html."
+    "text": "Cloudnutzung - Kostenberechnung Upload mit AWS Snowball\n\n\n\n\n\n\nAWS Snowball1\n\n\n\n\n\n\n300 $ für 10 Tage\n80 TB HDD Kapazität\n\n\n\n\n\n24,27 $ pro Probe, ca 2 $ gespart\n\nAmazon Web Services, „Using an AWS Snowball Device - AWS Snowball“, 2023, https://docs.aws.amazon.com/snowball/latest/ug/using-device.html."
   },
   {
     "objectID": "thesis/thesis.html#diskussion---optimierung-cpu-nutzung",
