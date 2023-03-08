@@ -161,6 +161,9 @@ Direct Acyclic Graph (DAG)
 :::
 ::::
 :::::
+:::{.notes}
+24,27 \$ pro Probe, ca 2 \$ gespart
+:::
 
 # Diskussion
 
