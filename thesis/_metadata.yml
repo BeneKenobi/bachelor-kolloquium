@@ -13,8 +13,8 @@ format:
     toc-depth: 1
     toc-title: "Agenda"
     transition: slide
-    parallax-background-image: images/background-25.png
-    parallax-background-size: "4096px 2048px"
+    parallax-background-image: images/background-10_3072x1536.png
+    parallax-background-size: "3072px 1536px"
     template-partials:
       - title-slide.html
 
