@@ -1,0 +1,81 @@
+---
+title: "Theorie-Praxis-Transfer"
+---
+
+## Studienwahl
+
+- "Für den Lebenslauf"
+- Arbeitgeber finanziert
+- Vor-Ort Vorlesungen
+
+::: {.notes}
+- FOM weil in Hannover präsent
+- Modell der Berufsbegleitung (Abends/Wochenende attraktiv)
+:::
+
+## Kompetenz-Check Überblick
+
+![](images/kompetenz_check.svg)
+
+::: {.notes}
+- Fachkompetenz: Erwartungen bestätigt, Inhalte gut vermittelt
+- Methoden: deutlicher zugewinn, später detaillierter
+- Sozial: Abneigung Zwangs-Teamarbeit eher gestiegen, später detaillierter
+- Persönlich: Spaß am Studium während des Studiums gestiegen
+- Diversity & Ethisch: nicht relevant
+- Transferkompetenz: Wirtschaftsteil von Informatik eher im Hintergrund
+:::
+
+## Gewinner
+1. Ich werde durch mein Studium effektiver nach Informationen suchen können.
+2. Im Rahmen meines Studiums werde ich meine Fertigkeiten des Computer- und Medieneinsatzes verbessert haben.
+
+::: {.notes}
+1. Methodenkompetenz 1 -> 4 -> 5
+2. Methodenkompetenz 1 -> 3 -> 5
+
+- Modul Fallstudie/Wissenschaftliches Arbeiten
+- Literaturverwaltung (Zotero, .bib)
+- Recherche: Lesekompetenz, Primärquellen identifizieren
+:::
+
+## Verlierer
+
+48. Durch mein Studium wird es mir besser gelingen, meine Wortbeiträge auf den Punkt zu bringen.
+49. In Folge meines Studiums werde ich meine Wortbeiträge besser an den Interessen der Zuhörenden ausrichten können.
+50. Durch mein Studium werde ich öfter auf die Rückmeldung achten, die ich bekommen kann, wenn ich Gelerntes von einer Situation in eine andere übertrage.
+
+::: {.notes}
+48. Sozialkompetenz 3 -> 1 -> 1
+49. Methodenkompetenz 3 -> 1 -> 1
+50. Transferkompetenz 4 -> 1 -> 2
+:::
+
+## Fazit
+
+- Theorie → Praxis
+  - Fallstudie/Wissenschaftliches Arbeiten
+  - Big Data & Data Science
+
+- Theorie ↔ Praxis
+  - Web Technologie
+  - Anwendungsprojekt
+
+::: {.notes}
+- FOM weiterempfehlen für Vor-Ort Modell
+- Corona war fies
+:::
+
+## Ausblick - Master-Studium
+
+**Biomedizinische Informatik und Data Science**
+
+oder
+
+**Data Science**
+
+::: {.notes}
+- Hochschule Mannheim
+- Fernuni Hagen
+- Big Data & Business Analytics (FOM) nicht in Hannover
+:::

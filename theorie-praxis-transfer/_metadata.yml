@@ -1,10 +1,16 @@
 institute: "FOM Hochschule für Oekonomie & Management"
+author:
+  - name: Benedikt Schnur
+    orcid: 0000-0002-1977-7878
 format: 
   revealjs:
     theme: [default, ../custom.scss]
     menu: false
+    footer: "Benedikt Schnur - Theorie-Praxis-Transfer"
     slide-number: True
     lang: de-DE
-    toc: True
+    toc: False
     toc-title: "Agenda"
     transition: slide
+
+image: "preview.png"
