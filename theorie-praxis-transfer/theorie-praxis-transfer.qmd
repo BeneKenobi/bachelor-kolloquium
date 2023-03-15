@@ -26,19 +26,6 @@ title: "Theorie-Praxis-Transfer"
 - Transferkompetenz: Wirtschaftsteil von Informatik eher im Hintergrund
 :::
 
-## Gewinner
-1. Ich werde durch mein Studium effektiver nach Informationen suchen können.
-2. Im Rahmen meines Studiums werde ich meine Fertigkeiten des Computer- und Medieneinsatzes verbessert haben.
-
-::: {.notes}
-1. Methodenkompetenz 1 -> 4 -> 5
-2. Methodenkompetenz 1 -> 3 -> 5
-
-- Modul Fallstudie/Wissenschaftliches Arbeiten
-- Literaturverwaltung (Zotero, .bib)
-- Recherche: Lesekompetenz, Primärquellen identifizieren
-:::
-
 ## Verlierer
 
 48. Durch mein Studium wird es mir besser gelingen, meine Wortbeiträge auf den Punkt zu bringen.
@@ -49,6 +36,20 @@ title: "Theorie-Praxis-Transfer"
 48. Sozialkompetenz 3 -> 1 -> 1
 49. Methodenkompetenz 3 -> 1 -> 1
 50. Transferkompetenz 4 -> 1 -> 2
+:::
+
+## Gewinner
+
+1. Ich werde durch mein Studium effektiver nach Informationen suchen können.
+2. Im Rahmen meines Studiums werde ich meine Fertigkeiten des Computer- und Medieneinsatzes verbessert haben.
+
+::: {.notes}
+1. Methodenkompetenz 1 -> 4 -> 5
+2. Methodenkompetenz 1 -> 3 -> 5
+
+- Modul Fallstudie/Wissenschaftliches Arbeiten
+- Literaturverwaltung (Zotero, .bib)
+- Recherche: Lesekompetenz, Primärquellen identifizieren
 :::
 
 ## Fazit
