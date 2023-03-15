@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://benekenobi.github.io/bachelor-kolloquium/index.html</loc>
-    <lastmod>2023-03-13T15:02:25.940Z</lastmod>
-  </url>
-  <url>
     <loc>https://benekenobi.github.io/bachelor-kolloquium/theorie-praxis-transfer/theorie-praxis-transfer.html</loc>
-    <lastmod>2023-03-13T15:02:27.352Z</lastmod>
+    <lastmod>2023-03-15T14:45:10.740Z</lastmod>
   </url>
   <url>
     <loc>https://benekenobi.github.io/bachelor-kolloquium/thesis/thesis.html</loc>
-    <lastmod>2023-03-13T15:02:27.892Z</lastmod>
+    <lastmod>2023-03-15T14:45:12.400Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benekenobi.github.io/bachelor-kolloquium/index.html</loc>
+    <lastmod>2023-03-15T14:45:14.296Z</lastmod>
   </url>
 </urlset>

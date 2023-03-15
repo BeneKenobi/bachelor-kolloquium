@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bachelor Thesis Kolloquium Präsentationen",
-    "section": "",
-    "text": "Theorie-Praxis-Transfer\n\n\n\n\n\n\nBenedikt Schnur\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThesis Präsentation\n\n\n\n\n\n\nBenedikt Schnur\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "theorie-praxis-transfer/theorie-praxis-transfer.html#studienwahl",
     "href": "theorie-praxis-transfer/theorie-praxis-transfer.html#studienwahl",
     "title": "Theorie-Praxis-Transfer",
@@ -21,18 +14,18 @@
     "text": "Kompetenz-Check Überblick\n\n\n\nFachkompetenz: Erwartungen bestätigt, Inhalte gut vermittelt\nMethoden: deutlicher zugewinn, später detaillierter\nSozial: Abneigung Zwangs-Teamarbeit eher gestiegen, später detaillierter\nPersönlich: Spaß am Studium während des Studiums gestiegen\nDiversity & Ethisch: nicht relevant\nTransferkompetenz: Wirtschaftsteil von Informatik eher im Hintergrund"
   },
   {
-    "objectID": "theorie-praxis-transfer/theorie-praxis-transfer.html#gewinner",
-    "href": "theorie-praxis-transfer/theorie-praxis-transfer.html#gewinner",
-    "title": "Theorie-Praxis-Transfer",
-    "section": "Gewinner",
-    "text": "Gewinner\n\nIch werde durch mein Studium effektiver nach Informationen suchen können.\nIm Rahmen meines Studiums werde ich meine Fertigkeiten des Computer- und Medieneinsatzes verbessert haben.\n\n\n\nMethodenkompetenz 1 -> 4 -> 5\nMethodenkompetenz 1 -> 3 -> 5\n\n\nModul Fallstudie/Wissenschaftliches Arbeiten\nLiteraturverwaltung (Zotero, .bib)\nRecherche: Lesekompetenz, Primärquellen identifizieren"
-  },
-  {
     "objectID": "theorie-praxis-transfer/theorie-praxis-transfer.html#verlierer",
     "href": "theorie-praxis-transfer/theorie-praxis-transfer.html#verlierer",
     "title": "Theorie-Praxis-Transfer",
     "section": "Verlierer",
     "text": "Verlierer\n\nDurch mein Studium wird es mir besser gelingen, meine Wortbeiträge auf den Punkt zu bringen.\nIn Folge meines Studiums werde ich meine Wortbeiträge besser an den Interessen der Zuhörenden ausrichten können.\nDurch mein Studium werde ich öfter auf die Rückmeldung achten, die ich bekommen kann, wenn ich Gelerntes von einer Situation in eine andere übertrage.\n\n\n\nSozialkompetenz 3 -> 1 -> 1\nMethodenkompetenz 3 -> 1 -> 1\nTransferkompetenz 4 -> 1 -> 2"
+  },
+  {
+    "objectID": "theorie-praxis-transfer/theorie-praxis-transfer.html#gewinner",
+    "href": "theorie-praxis-transfer/theorie-praxis-transfer.html#gewinner",
+    "title": "Theorie-Praxis-Transfer",
+    "section": "Gewinner",
+    "text": "Gewinner\n\nIch werde durch mein Studium effektiver nach Informationen suchen können.\nIm Rahmen meines Studiums werde ich meine Fertigkeiten des Computer- und Medieneinsatzes verbessert haben.\n\n\n\nMethodenkompetenz 1 -> 4 -> 5\nMethodenkompetenz 1 -> 3 -> 5\n\n\nModul Fallstudie/Wissenschaftliches Arbeiten\nLiteraturverwaltung (Zotero, .bib)\nRecherche: Lesekompetenz, Primärquellen identifizieren"
   },
   {
     "objectID": "theorie-praxis-transfer/theorie-praxis-transfer.html#fazit",
@@ -187,5 +180,12 @@
     "title": "",
     "section": "Danke",
     "text": "Danke\n\nMedizinische Hochschule Hannover\nInstitut für Humangenetik\nProf. Dr. med. Brigitte Schlegelberger\nDr. rer. nat. Gunnar Schmidt\nDr. rer. nat. Winfried Hofmann\nFOM Hochschule für Oekonomie & Management\nProf. Dr. Stephan Kluth"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bachelor Thesis Kolloquium Präsentationen",
+    "section": "",
+    "text": "Theorie-Praxis-Transfer\n\n\n\n\n\n\nBenedikt Schnur\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThesis Präsentation\n\n\n\n\n\n\nBenedikt Schnur\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
