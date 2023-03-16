@@ -210,6 +210,9 @@ Direct Acyclic Graph (DAG)
 - Aufteilung von *megSAP* in kleinere Schritte
 - Speichern im *CRAM* Dateiformat
 :::
+::: {.notes}
+- `vc` und `cn` parallel
+:::
 
 ## Fazit und Ausblick - Usability
 
