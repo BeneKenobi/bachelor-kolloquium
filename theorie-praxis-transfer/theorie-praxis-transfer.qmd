@@ -8,10 +8,10 @@ title: "Theorie-Praxis-Transfer"
 - "Für den Lebenslauf"
 - Arbeitgeber finanziert
 - Vor-Ort Vorlesungen
+- FOM in Hannover präsent
+- Modell der Berufsbegleitung (Abends/Wochenende)
 :::
 ::: {.notes}
-- FOM weil in Hannover präsent
-- Modell der Berufsbegleitung (Abends/Wochenende attraktiv)
 :::
 
 ## Kompetenz-Check Überblick
