@@ -571,7 +571,6 @@
                 "sha256:73b6e0775d41a9fee7ee756c80f58a6bed4040869ccc21411dc559818874d321",
                 "sha256:ae7f3a1b8cb88b4f55009ce79fa7c06f99d70cd63601ee4aa91815d054f46f75"
             ],
-            "index": "pypi",
             "markers": "python_version >= '3.8'",
             "version": "==4.2.5"
         },
@@ -727,12 +726,12 @@
         },
         "notebook": {
             "hashes": [
-                "sha256:289b606d7e173f75a18beb1406ef411b43f97f7a9c55ba03efa3622905a62346",
-                "sha256:3bcff00c17b3ac142ef5f436d50637d936b274cfa0b41f6ac0175363de9b4e09"
+                "sha256:2ef07d4220421623ad3fe88118d687bc0450055570cdd160814a59cf3a1c516e",
+                "sha256:c89264081f671bc02eec0ed470a627ed791b9156cad9285226b31611d3e9fe1c"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8'",
-            "version": "==7.0.7"
+            "version": "==7.2.2"
         },
         "notebook-shim": {
             "hashes": [
@@ -1419,7 +1418,7 @@
                 "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
                 "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"
             ],
-            "markers": "python_version < '3.11'",
+            "markers": "python_version < '3.12'",
             "version": "==4.12.2"
         },
         "uri-template": {
